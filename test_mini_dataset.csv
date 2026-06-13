@@ -1,0 +1,11 @@
+id,nom,type_acteur,nb_parcelles,nb_parcelles_urbaines,nb_parcelles_rurales,frequence_revente,ratio_plus_value,duree_detention_mois,nb_liens_reseau,partage_telephone,partage_adresse,partage_iban,age_premier_achat,nb_dossiers_traites,conflit_direct,lien_familial_agent,favoritisme,nb_ventes_circulaires,label,description
+T001,Standard1,citoyen,1,1,0,0.0,0.1,24,1,0,0,0,5,0,0,0,0,0,standard,
+T002,Standard2,citoyen,1,1,0,0.0,0.1,24,1,0,0,0,5,0,0,0,0,0,standard,
+T003,Standard3,citoyen,1,1,0,0.0,0.1,24,1,0,0,0,5,0,0,0,0,0,standard,
+T004,Specul1,citoyen,1,1,0,0.8,1.2,5,1,0,0,0,5,0,0,0,0,0,speculation,
+T005,Specul2,citoyen,1,1,0,0.6,0.9,7,1,0,0,0,5,0,0,0,0,0,speculation,
+T006,Accap1,citoyen,6,5,0,0.0,0.1,24,1,0,0,0,5,0,0,0,0,0,accaparement,
+T007,Accap2,citoyen,5,4,0,0.0,0.1,24,1,0,0,0,5,0,0,0,0,0,accaparement,
+T008,Conflit1,citoyen,1,1,0,0.0,0.1,24,1,0,0,0,5,0,1,0,0,0,fraude,
+T009,Reseau1,citoyen,1,1,0,0.0,0.1,24,1,1,0,1,5,0,0,0,0,1,fraude,
+T010,FraudeMax,citoyen,8,6,0,1.0,2.0,3,1,1,0,1,5,0,1,0,0,2,fraude,

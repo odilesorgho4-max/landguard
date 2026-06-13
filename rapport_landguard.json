@@ -1,0 +1,2022 @@
+[
+  {
+    "id": "D001",
+    "nom": "Fatou Kaboré",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.4999,
+        "atypique": 0.4788,
+        "speculateur": 0.0149,
+        "fraude": 0.0064
+      },
+      "confiance": 0.4999
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.615,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.369
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.369
+    }
+  },
+  {
+    "id": "D002",
+    "nom": "Ibrahim Sawadogo",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.9497,
+        "atypique": 0.0309,
+        "speculateur": 0.0099,
+        "fraude": 0.0095
+      },
+      "confiance": 0.9497
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6075,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3645
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)=0.36 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3645
+    }
+  },
+  {
+    "id": "D003",
+    "nom": "Youssouf Traoré",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.1168,
+        "atypique": 0.8672,
+        "speculateur": 0.0124,
+        "fraude": 0.0036
+      },
+      "confiance": 0.8672
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6225,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3735
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3735
+    }
+  },
+  {
+    "id": "D004",
+    "nom": "Kadiatou Diallo",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.8608,
+        "atypique": 0.1183,
+        "speculateur": 0.012,
+        "fraude": 0.0089
+      },
+      "confiance": 0.8608
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.612,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3672
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3672
+    }
+  },
+  {
+    "id": "D005",
+    "nom": "Bintou Ouédraogo",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.0479,
+        "atypique": 0.9363,
+        "speculateur": 0.013,
+        "fraude": 0.0028
+      },
+      "confiance": 0.9363
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.63,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.378
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.38 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.378
+    }
+  },
+  {
+    "id": "D006",
+    "nom": "Moussa Compaoré",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.0195,
+        "atypique": 0.958,
+        "speculateur": 0.0206,
+        "fraude": 0.0019
+      },
+      "confiance": 0.958
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.618,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3708
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3708
+    }
+  },
+  {
+    "id": "D007",
+    "nom": "Aïcha Coulibaly",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.9216,
+        "atypique": 0.0591,
+        "speculateur": 0.0106,
+        "fraude": 0.0088
+      },
+      "confiance": 0.9216
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6075,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3645
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)=0.36 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3645
+    }
+  },
+  {
+    "id": "D008",
+    "nom": "Seydou Zongo",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.0488,
+        "atypique": 0.927,
+        "speculateur": 0.0205,
+        "fraude": 0.0037
+      },
+      "confiance": 0.927
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.627,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3762
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.38 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3762
+    }
+  },
+  {
+    "id": "D009",
+    "nom": "Mariam Barry",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.55,
+        "atypique": 0.4299,
+        "speculateur": 0.0139,
+        "fraude": 0.0062
+      },
+      "confiance": 0.55
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6105,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3663
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3663
+    }
+  },
+  {
+    "id": "D010",
+    "nom": "Ousmane Kiendrebeogo",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.484,
+        "atypique": 0.4892,
+        "speculateur": 0.0187,
+        "fraude": 0.0081
+      },
+      "confiance": 0.4892
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.621,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3726
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3726
+    }
+  },
+  {
+    "id": "D011",
+    "nom": "Rasmata Nikiema",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.2914,
+        "atypique": 0.6575,
+        "speculateur": 0.0409,
+        "fraude": 0.0102
+      },
+      "confiance": 0.6575
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.633,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3798
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.38 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3798
+    }
+  },
+  {
+    "id": "D012",
+    "nom": "Issouf Tapsoba",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.4021,
+        "atypique": 0.5722,
+        "speculateur": 0.0186,
+        "fraude": 0.007
+      },
+      "confiance": 0.5722
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6135,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3681
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3681
+    }
+  },
+  {
+    "id": "D013",
+    "nom": "Clarisse Ouoba",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.0789,
+        "atypique": 0.9061,
+        "speculateur": 0.0119,
+        "fraude": 0.0031
+      },
+      "confiance": 0.9061
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6165,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3699
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3699
+    }
+  },
+  {
+    "id": "D014",
+    "nom": "Valentin Kabré",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.0298,
+        "atypique": 0.9372,
+        "speculateur": 0.0303,
+        "fraude": 0.0027
+      },
+      "confiance": 0.9372
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6375,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3825
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.38 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3825
+    }
+  },
+  {
+    "id": "D015",
+    "nom": "Aminata Sankara",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.6556,
+        "atypique": 0.3243,
+        "speculateur": 0.013,
+        "fraude": 0.0071
+      },
+      "confiance": 0.6556
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.609,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3654
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3654
+    }
+  },
+  {
+    "id": "D016",
+    "nom": "Dramane Ouattara",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.6573,
+        "atypique": 0.3148,
+        "speculateur": 0.0192,
+        "fraude": 0.0087
+      },
+      "confiance": 0.6573
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6255,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3753
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)=0.38 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3753
+    }
+  },
+  {
+    "id": "D017",
+    "nom": "Salimata Sawadogo",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.1333,
+        "atypique": 0.8506,
+        "speculateur": 0.0123,
+        "fraude": 0.0037
+      },
+      "confiance": 0.8506
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6195,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3717
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3717
+    }
+  },
+  {
+    "id": "D018",
+    "nom": "Hamidou Ilboudo",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.5919,
+        "atypique": 0.3633,
+        "speculateur": 0.0316,
+        "fraude": 0.0131
+      },
+      "confiance": 0.5919
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.612,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3672
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3672
+    }
+  },
+  {
+    "id": "D019",
+    "nom": "Zenabou Kinda",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.0501,
+        "atypique": 0.9342,
+        "speculateur": 0.0129,
+        "fraude": 0.0028
+      },
+      "confiance": 0.9342
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6285,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3771
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.38 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3771
+    }
+  },
+  {
+    "id": "D020",
+    "nom": "Pascal Lankoandé",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.575,
+        "atypique": 0.4018,
+        "speculateur": 0.0156,
+        "fraude": 0.0077
+      },
+      "confiance": 0.575
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.615,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.369
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.369
+    }
+  },
+  {
+    "id": "D021",
+    "nom": "Djénéba Koné",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.4503,
+        "atypique": 0.5257,
+        "speculateur": 0.0172,
+        "fraude": 0.0069
+      },
+      "confiance": 0.5257
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6105,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3663
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3663
+    }
+  },
+  {
+    "id": "D022",
+    "nom": "Lassané Ouédraogo",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.5351,
+        "atypique": 0.3906,
+        "speculateur": 0.0543,
+        "fraude": 0.02
+      },
+      "confiance": 0.5351
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6345,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3807
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)=0.38 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3807
+    }
+  },
+  {
+    "id": "D023",
+    "nom": "Marcelline Tougma",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.2694,
+        "atypique": 0.7125,
+        "speculateur": 0.0132,
+        "fraude": 0.0049
+      },
+      "confiance": 0.7125
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.618,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3708
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3708
+    }
+  },
+  {
+    "id": "D024",
+    "nom": "Boureima Diendéré",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.2076,
+        "atypique": 0.76,
+        "speculateur": 0.0252,
+        "fraude": 0.0072
+      },
+      "confiance": 0.76
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.624,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3744
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3744
+    }
+  },
+  {
+    "id": "D025",
+    "nom": "Assétou Guiro",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.5166,
+        "atypique": 0.4625,
+        "speculateur": 0.0146,
+        "fraude": 0.0063
+      },
+      "confiance": 0.5166
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6135,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3681
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3681
+    }
+  },
+  {
+    "id": "D026",
+    "nom": "Rodrigue Belem",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.0134,
+        "atypique": 0.9661,
+        "speculateur": 0.0188,
+        "fraude": 0.0016
+      },
+      "confiance": 0.9661
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.621,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3726
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3726
+    }
+  },
+  {
+    "id": "D027",
+    "nom": "Halimatou Sawadogo",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.8789,
+        "atypique": 0.1022,
+        "speculateur": 0.0107,
+        "fraude": 0.0083
+      },
+      "confiance": 0.8789
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6075,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3645
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)=0.36 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3645
+    }
+  },
+  {
+    "id": "D028",
+    "nom": "Ernest Zoungrana",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.0479,
+        "atypique": 0.9363,
+        "speculateur": 0.013,
+        "fraude": 0.0028
+      },
+      "confiance": 0.9363
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.63,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.378
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.38 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.378
+    }
+  },
+  {
+    "id": "D029",
+    "nom": "Fatoumata Traoré",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.0821,
+        "atypique": 0.8912,
+        "speculateur": 0.0219,
+        "fraude": 0.0047
+      },
+      "confiance": 0.8912
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6255,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3753
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.38 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3753
+    }
+  },
+  {
+    "id": "D030",
+    "nom": "Souleymane Kouraogo",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.3562,
+        "atypique": 0.6166,
+        "speculateur": 0.0201,
+        "fraude": 0.0071
+      },
+      "confiance": 0.6166
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6165,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.3699
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.3699
+    }
+  },
+  {
+    "id": "D031",
+    "nom": "Cheick Coulibaly",
+    "label_gt": "speculation",
+    "neural": {
+      "classe": "speculateur",
+      "probabilites": {
+        "standard": 0.0,
+        "atypique": 0.0003,
+        "speculateur": 0.9985,
+        "fraude": 0.0011
+      },
+      "confiance": 0.9985
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 4 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 5 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 120% (seuil=50%)"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.88,
+      "accapareur": 0.95,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.6688
+    },
+    "fusion": {
+      "niveau_final": "haut",
+      "convergence": true,
+      "explication": "Décision hybride : neural=speculateur | symbolique=haut(15pts) | problog=P(fraude)=0.67 | niveau_final=haut | règles=['A1', 'B1', 'B2'] | convergence=OUI",
+      "score_sym": 15,
+      "p_fraude": 0.6688
+    }
+  },
+  {
+    "id": "D032",
+    "nom": "Bibata Ouédraogo",
+    "label_gt": "speculation",
+    "neural": {
+      "classe": "speculateur",
+      "probabilites": {
+        "standard": 0.0001,
+        "atypique": 0.001,
+        "speculateur": 0.9978,
+        "fraude": 0.0011
+      },
+      "confiance": 0.9978
+    },
+    "alertes": [
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 8 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 85% (seuil=50%)"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.8275,
+      "accapareur": 0.75,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.4965
+    },
+    "fusion": {
+      "niveau_final": "haut",
+      "convergence": true,
+      "explication": "Décision hybride : neural=speculateur | symbolique=haut(10pts) | problog=P(fraude)=0.50 | niveau_final=haut | règles=['B1', 'B2'] | convergence=OUI",
+      "score_sym": 10,
+      "p_fraude": 0.4965
+    }
+  },
+  {
+    "id": "D033",
+    "nom": "Idrissa Zerbo",
+    "label_gt": "speculation",
+    "neural": {
+      "classe": "speculateur",
+      "probabilites": {
+        "standard": 0.0003,
+        "atypique": 0.0034,
+        "speculateur": 0.9937,
+        "fraude": 0.0026
+      },
+      "confiance": 0.9937
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 4 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 5 parcelles au total"
+      },
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 6 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 95% (seuil=50%)"
+      },
+      {
+        "regle": "D2",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Adresse partagée entre propriétaires"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.65,
+      "speculateur": 0.8425,
+      "accapareur": 0.95,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.6403
+    },
+    "fusion": {
+      "niveau_final": "critique",
+      "convergence": true,
+      "explication": "Décision hybride : neural=speculateur | symbolique=critique(22pts) | problog=P(fraude)=0.64 | niveau_final=critique | règles=['A1', 'A4', 'B1', 'B2', 'D2'] | convergence=OUI",
+      "score_sym": 22,
+      "p_fraude": 0.6403
+    }
+  },
+  {
+    "id": "D034",
+    "nom": "Mariam Zida",
+    "label_gt": "speculation",
+    "neural": {
+      "classe": "speculateur",
+      "probabilites": {
+        "standard": 0.0,
+        "atypique": 0.0,
+        "speculateur": 0.9995,
+        "fraude": 0.0004
+      },
+      "confiance": 0.9995
+    },
+    "alertes": [
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 3 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 150% (seuil=50%)"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.88,
+      "accapareur": 0.75,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.528
+    },
+    "fusion": {
+      "niveau_final": "haut",
+      "convergence": true,
+      "explication": "Décision hybride : neural=speculateur | symbolique=haut(10pts) | problog=P(fraude)=0.53 | niveau_final=haut | règles=['B1', 'B2'] | convergence=OUI",
+      "score_sym": 10,
+      "p_fraude": 0.528
+    }
+  },
+  {
+    "id": "D035",
+    "nom": "Adama Ouoba",
+    "label_gt": "speculation",
+    "neural": {
+      "classe": "speculateur",
+      "probabilites": {
+        "standard": 0.0025,
+        "atypique": 0.0155,
+        "speculateur": 0.9071,
+        "fraude": 0.0748
+      },
+      "confiance": 0.9071
+    },
+    "alertes": [
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 9 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 80% (seuil=50%)"
+      },
+      {
+        "regle": "D1",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Téléphone partagé (CI-05 → suspicion prête-nom)"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.8,
+      "speculateur": 0.82,
+      "accapareur": 0.75,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.51
+    },
+    "fusion": {
+      "niveau_final": "haut",
+      "convergence": true,
+      "explication": "Décision hybride : neural=speculateur | symbolique=haut(15pts) | problog=P(fraude)=0.51 | niveau_final=haut | règles=['B1', 'B2', 'D1'] | convergence=OUI",
+      "score_sym": 15,
+      "p_fraude": 0.51
+    }
+  },
+  {
+    "id": "D036",
+    "nom": "Abdoulaye Nana",
+    "label_gt": "accaparement",
+    "neural": {
+      "classe": "fraude",
+      "probabilites": {
+        "standard": 0.0985,
+        "atypique": 0.2069,
+        "speculateur": 0.332,
+        "fraude": 0.3625
+      },
+      "confiance": 0.3625
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 6 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 7 parcelles au total"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.645,
+      "accapareur": 0.95,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.4902
+    },
+    "fusion": {
+      "niveau_final": "haut",
+      "convergence": true,
+      "explication": "Décision hybride : neural=fraude | symbolique=moyen(7pts) | problog=P(fraude)=0.49 | niveau_final=haut | règles=['A1', 'A4'] | convergence=OUI",
+      "score_sym": 7,
+      "p_fraude": 0.4902
+    }
+  },
+  {
+    "id": "D037",
+    "nom": "Fatoumata Barro",
+    "label_gt": "accaparement",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.2973,
+        "atypique": 0.426,
+        "speculateur": 0.2055,
+        "fraude": 0.0712
+      },
+      "confiance": 0.426
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 5 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 5 parcelles au total"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.63,
+      "accapareur": 0.95,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.4788
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=moyen(7pts) | problog=P(fraude)=0.48 | niveau_final=moyen | règles=['A1', 'A4'] | convergence=NON",
+      "score_sym": 7,
+      "p_fraude": 0.4788
+    }
+  },
+  {
+    "id": "D038",
+    "nom": "Souleymane Méda",
+    "label_gt": "accaparement",
+    "neural": {
+      "classe": "fraude",
+      "probabilites": {
+        "standard": 0.0549,
+        "atypique": 0.0822,
+        "speculateur": 0.2081,
+        "fraude": 0.6547
+      },
+      "confiance": 0.6547
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 6 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 8 parcelles au total"
+      },
+      {
+        "regle": "D2",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Adresse partagée entre propriétaires"
+      },
+      {
+        "regle": "D4",
+        "cat": "reseau",
+        "niveau": "critique",
+        "desc": "IBAN partagé entre acteurs distincts"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.65,
+      "speculateur": 0.66,
+      "accapareur": 0.95,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.5249
+    },
+    "fusion": {
+      "niveau_final": "critique",
+      "convergence": true,
+      "explication": "Décision hybride : neural=fraude | symbolique=critique(22pts) | problog=P(fraude)=0.52 | niveau_final=critique | règles=['A1', 'A4', 'D2', 'D4'] | convergence=OUI",
+      "score_sym": 22,
+      "p_fraude": 0.5249
+    }
+  },
+  {
+    "id": "D039",
+    "nom": "Jocelyne Kabré",
+    "label_gt": "accaparement",
+    "neural": {
+      "classe": "fraude",
+      "probabilites": {
+        "standard": 0.0317,
+        "atypique": 0.3204,
+        "speculateur": 0.0328,
+        "fraude": 0.6151
+      },
+      "confiance": 0.6151
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 4 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 6 parcelles au total"
+      },
+      {
+        "regle": "D1",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Téléphone partagé (CI-05 → suspicion prête-nom)"
+      },
+      {
+        "regle": "D2",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Adresse partagée entre propriétaires"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.8,
+      "speculateur": 0.6225,
+      "accapareur": 0.95,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.646
+    },
+    "fusion": {
+      "niveau_final": "critique",
+      "convergence": true,
+      "explication": "Décision hybride : neural=fraude | symbolique=haut(17pts) | problog=P(fraude)=0.65 | niveau_final=critique | règles=['A1', 'A4', 'D1', 'D2'] | convergence=OUI",
+      "score_sym": 17,
+      "p_fraude": 0.646
+    }
+  },
+  {
+    "id": "D040",
+    "nom": "Karim Ouédraogo",
+    "label_gt": "accaparement",
+    "neural": {
+      "classe": "speculateur",
+      "probabilites": {
+        "standard": 0.0292,
+        "atypique": 0.3532,
+        "speculateur": 0.5966,
+        "fraude": 0.0209
+      },
+      "confiance": 0.5966
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 4 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 5 parcelles au total"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6525,
+      "accapareur": 0.95,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.4959
+    },
+    "fusion": {
+      "niveau_final": "haut",
+      "convergence": true,
+      "explication": "Décision hybride : neural=speculateur | symbolique=moyen(7pts) | problog=P(fraude)=0.50 | niveau_final=haut | règles=['A1', 'A4'] | convergence=OUI",
+      "score_sym": 7,
+      "p_fraude": 0.4959
+    }
+  },
+  {
+    "id": "D041",
+    "nom": "Sylvestre Koala",
+    "label_gt": "limite",
+    "neural": {
+      "classe": "speculateur",
+      "probabilites": {
+        "standard": 0.0041,
+        "atypique": 0.1597,
+        "speculateur": 0.8159,
+        "fraude": 0.0204
+      },
+      "confiance": 0.8159
+    },
+    "alertes": [
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 11 mois (seuil=12)"
+      },
+      {
+        "regle": "D1",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Téléphone partagé (CI-05 → suspicion prête-nom)"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.8,
+      "speculateur": 0.672,
+      "accapareur": 0.75,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.51
+    },
+    "fusion": {
+      "niveau_final": "haut",
+      "convergence": true,
+      "explication": "Décision hybride : neural=speculateur | symbolique=haut(10pts) | problog=P(fraude)=0.51 | niveau_final=haut | règles=['B1', 'D1'] | convergence=OUI",
+      "score_sym": 10,
+      "p_fraude": 0.51
+    }
+  },
+  {
+    "id": "D042",
+    "nom": "Raïssa Nana",
+    "label_gt": "limite",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.0331,
+        "atypique": 0.9508,
+        "speculateur": 0.0137,
+        "fraude": 0.0024
+      },
+      "confiance": 0.9508
+    },
+    "alertes": [
+      {
+        "regle": "C3",
+        "cat": "conflit",
+        "niveau": "haut",
+        "desc": "Favoritisme répétitif : 3 dossiers pour même acteur"
+      },
+      {
+        "regle": "D2",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Adresse partagée entre propriétaires"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.65,
+      "speculateur": 0.63,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.378
+    },
+    "fusion": {
+      "niveau_final": "haut",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=haut(10pts) | problog=P(fraude)=0.38 | niveau_final=haut | règles=['C3', 'D2'] | convergence=NON",
+      "score_sym": 10,
+      "p_fraude": 0.378
+    }
+  },
+  {
+    "id": "D043",
+    "nom": "Olivier Sawadogo",
+    "label_gt": "limite",
+    "neural": {
+      "classe": "speculateur",
+      "probabilites": {
+        "standard": 0.0078,
+        "atypique": 0.3323,
+        "speculateur": 0.6497,
+        "fraude": 0.0102
+      },
+      "confiance": 0.6497
+    },
+    "alertes": [
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 51% (seuil=50%)"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6765,
+      "accapareur": 0.75,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.4059
+    },
+    "fusion": {
+      "niveau_final": "haut",
+      "convergence": false,
+      "explication": "Décision hybride : neural=speculateur | symbolique=moyen(5pts) | problog=P(fraude)=0.41 | niveau_final=haut | règles=['B2'] | convergence=NON",
+      "score_sym": 5,
+      "p_fraude": 0.4059
+    }
+  },
+  {
+    "id": "D044",
+    "nom": "Brigitte Zoungrana",
+    "label_gt": "limite",
+    "neural": {
+      "classe": "standard",
+      "probabilites": {
+        "standard": 0.6496,
+        "atypique": 0.2273,
+        "speculateur": 0.0539,
+        "fraude": 0.0692
+      },
+      "confiance": 0.6496
+    },
+    "alertes": [
+      {
+        "regle": "C2",
+        "cat": "conflit",
+        "niveau": "critique",
+        "desc": "Conflit indirect : dossiers de proches familiaux"
+      },
+      {
+        "regle": "C3",
+        "cat": "conflit",
+        "niveau": "haut",
+        "desc": "Favoritisme répétitif : 4 dossiers pour même acteur"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.615,
+      "accapareur": 0.05,
+      "conflit": 0.72,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.7128
+    },
+    "fusion": {
+      "niveau_final": "haut",
+      "convergence": false,
+      "explication": "Décision hybride : neural=standard | symbolique=haut(15pts) | problog=P(fraude)=0.71 | niveau_final=haut | règles=['C2', 'C3'] | convergence=NON",
+      "score_sym": 15,
+      "p_fraude": 0.7128
+    }
+  },
+  {
+    "id": "D045",
+    "nom": "Justin Compaoré",
+    "label_gt": "limite",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.0235,
+        "atypique": 0.4232,
+        "speculateur": 0.2985,
+        "fraude": 0.2548
+      },
+      "confiance": 0.4232
+    },
+    "alertes": [
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 10 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 60% (seuil=50%)"
+      },
+      {
+        "regle": "D1",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Téléphone partagé (CI-05 → suspicion prête-nom)"
+      },
+      {
+        "regle": "D2",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Adresse partagée entre propriétaires"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.8,
+      "speculateur": 0.69,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.414
+    },
+    "fusion": {
+      "niveau_final": "critique",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=critique(20pts) | problog=P(fraude)=0.41 | niveau_final=critique | règles=['B1', 'B2', 'D1', 'D2'] | convergence=NON",
+      "score_sym": 20,
+      "p_fraude": 0.414
+    }
+  },
+  {
+    "id": "D046",
+    "nom": "Réseau Koné-Diallo",
+    "label_gt": "fraude",
+    "neural": {
+      "classe": "fraude",
+      "probabilites": {
+        "standard": 0.0,
+        "atypique": 0.0,
+        "speculateur": 0.0109,
+        "fraude": 0.9891
+      },
+      "confiance": 0.9891
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 5 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 6 parcelles au total"
+      },
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 4 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 210% (seuil=50%)"
+      },
+      {
+        "regle": "D1",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Téléphone partagé (CI-05 → suspicion prête-nom)"
+      },
+      {
+        "regle": "D2",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Adresse partagée entre propriétaires"
+      },
+      {
+        "regle": "D4",
+        "cat": "reseau",
+        "niveau": "critique",
+        "desc": "IBAN partagé entre acteurs distincts"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.8,
+      "speculateur": 0.88,
+      "accapareur": 0.95,
+      "conflit": 0.72,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.7128
+    },
+    "fusion": {
+      "niveau_final": "critique",
+      "convergence": true,
+      "explication": "Décision hybride : neural=fraude | symbolique=critique(37pts) | problog=P(fraude)=0.71 | niveau_final=critique | règles=['A1', 'A4', 'B1', 'B2', 'D1', 'D2', 'D4'] | convergence=OUI",
+      "score_sym": 37,
+      "p_fraude": 0.7128
+    }
+  },
+  {
+    "id": "D047",
+    "nom": "Agent Traoré indirect",
+    "label_gt": "fraude",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.1612,
+        "atypique": 0.6633,
+        "speculateur": 0.0913,
+        "fraude": 0.0842
+      },
+      "confiance": 0.6633
+    },
+    "alertes": [
+      {
+        "regle": "C1",
+        "cat": "conflit",
+        "niveau": "critique",
+        "desc": "Conflit d'intérêt direct (CI-01 violée)"
+      },
+      {
+        "regle": "C2",
+        "cat": "conflit",
+        "niveau": "critique",
+        "desc": "Conflit indirect : dossiers de proches familiaux"
+      },
+      {
+        "regle": "C3",
+        "cat": "conflit",
+        "niveau": "haut",
+        "desc": "Favoritisme répétitif : 7 dossiers pour même acteur"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.6375,
+      "accapareur": 0.75,
+      "conflit": 0.97,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.9603
+    },
+    "fusion": {
+      "niveau_final": "critique",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=critique(25pts) | problog=P(fraude)=0.96 | niveau_final=critique | règles=['C1', 'C2', 'C3'] | convergence=NON",
+      "score_sym": 25,
+      "p_fraude": 0.9603
+    }
+  },
+  {
+    "id": "D048",
+    "nom": "Réseau Oumar circulaire",
+    "label_gt": "fraude",
+    "neural": {
+      "classe": "fraude",
+      "probabilites": {
+        "standard": 0.0,
+        "atypique": 0.0,
+        "speculateur": 0.0168,
+        "fraude": 0.9832
+      },
+      "confiance": 0.9832
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 4 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 5 parcelles au total"
+      },
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 3 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 180% (seuil=50%)"
+      },
+      {
+        "regle": "D1",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Téléphone partagé (CI-05 → suspicion prête-nom)"
+      },
+      {
+        "regle": "D2",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Adresse partagée entre propriétaires"
+      },
+      {
+        "regle": "D3",
+        "cat": "reseau",
+        "niveau": "critique",
+        "desc": "Circuit de blanchiment détecté (3 boucle(s))"
+      },
+      {
+        "regle": "D4",
+        "cat": "reseau",
+        "niveau": "critique",
+        "desc": "IBAN partagé entre acteurs distincts"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.8,
+      "speculateur": 0.88,
+      "accapareur": 0.95,
+      "conflit": 0.0,
+      "blanchiment": 0.93,
+      "fraude_globale": 0.8649
+    },
+    "fusion": {
+      "niveau_final": "critique",
+      "convergence": true,
+      "explication": "Décision hybride : neural=fraude | symbolique=critique(47pts) | problog=P(fraude)=0.86 | niveau_final=critique | règles=['A1', 'A4', 'B1', 'B2', 'D1', 'D2', 'D3', 'D4'] | convergence=OUI",
+      "score_sym": 47,
+      "p_fraude": 0.8649
+    }
+  },
+  {
+    "id": "D049",
+    "nom": "Promoteur fantôme Kaboré",
+    "label_gt": "fraude",
+    "neural": {
+      "classe": "fraude",
+      "probabilites": {
+        "standard": 0.0,
+        "atypique": 0.0,
+        "speculateur": 0.001,
+        "fraude": 0.999
+      },
+      "confiance": 0.999
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 7 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 9 parcelles au total"
+      },
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 2 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 250% (seuil=50%)"
+      },
+      {
+        "regle": "D1",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Téléphone partagé (CI-05 → suspicion prête-nom)"
+      },
+      {
+        "regle": "D2",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Adresse partagée entre propriétaires"
+      },
+      {
+        "regle": "D4",
+        "cat": "reseau",
+        "niveau": "critique",
+        "desc": "IBAN partagé entre acteurs distincts"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.8,
+      "speculateur": 0.88,
+      "accapareur": 0.95,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.6688
+    },
+    "fusion": {
+      "niveau_final": "critique",
+      "convergence": true,
+      "explication": "Décision hybride : neural=fraude | symbolique=critique(37pts) | problog=P(fraude)=0.67 | niveau_final=critique | règles=['A1', 'A4', 'B1', 'B2', 'D1', 'D2', 'D4'] | convergence=OUI",
+      "score_sym": 37,
+      "p_fraude": 0.6688
+    }
+  },
+  {
+    "id": "D050",
+    "nom": "Fraude composite Yéro",
+    "label_gt": "fraude",
+    "neural": {
+      "classe": "fraude",
+      "probabilites": {
+        "standard": 0.0,
+        "atypique": 0.0,
+        "speculateur": 0.0017,
+        "fraude": 0.9983
+      },
+      "confiance": 0.9983
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 6 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 8 parcelles au total"
+      },
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 5 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 195% (seuil=50%)"
+      },
+      {
+        "regle": "C1",
+        "cat": "conflit",
+        "niveau": "critique",
+        "desc": "Conflit d'intérêt direct (CI-01 violée)"
+      },
+      {
+        "regle": "C3",
+        "cat": "conflit",
+        "niveau": "haut",
+        "desc": "Favoritisme répétitif : 0 dossiers pour même acteur"
+      },
+      {
+        "regle": "D1",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Téléphone partagé (CI-05 → suspicion prête-nom)"
+      },
+      {
+        "regle": "D2",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Adresse partagée entre propriétaires"
+      },
+      {
+        "regle": "D3",
+        "cat": "reseau",
+        "niveau": "critique",
+        "desc": "Circuit de blanchiment détecté (2 boucle(s))"
+      },
+      {
+        "regle": "D4",
+        "cat": "reseau",
+        "niveau": "critique",
+        "desc": "IBAN partagé entre acteurs distincts"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.8,
+      "speculateur": 0.88,
+      "accapareur": 0.95,
+      "conflit": 0.97,
+      "blanchiment": 0.93,
+      "fraude_globale": 0.9603
+    },
+    "fusion": {
+      "niveau_final": "critique",
+      "convergence": true,
+      "explication": "Décision hybride : neural=fraude | symbolique=critique(62pts) | problog=P(fraude)=0.96 | niveau_final=critique | règles=['A1', 'A4', 'B1', 'B2', 'C1', 'C3', 'D1', 'D2', 'D3', 'D4'] | convergence=OUI",
+      "score_sym": 62,
+      "p_fraude": 0.9603
+    }
+  }
+]

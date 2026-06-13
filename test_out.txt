@@ -1,0 +1,116 @@
+==============================================================
+  LANDGUARD NEURO-SYMBOLIC AI — RAPPORT CONSOLIDÉ
+  Généré le : 2026-06-13 03:15:30
+==============================================================
+
+SYNTHÈSE : 10 dossiers analysés
+  🔴 Critique : 3
+  🟠 Élevé    : 2
+  🟡 Moyen    : 5
+  🟢 Faible   : 0
+
+── CRITIQUE 🔴 (────────────────────────────────────────
+
+  [T008] Conflit1
+    Label réel   : fraude
+    Neural       : atypique (confiance=0.84)
+    P(fraude)    : 0.96 | Score sym : 10pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=atypique | symbolique=haut(10pts) | problog=P(fraude)=...
+
+    ⚠ [CRITIQUE] Règle C1 — Conflit d'intérêt direct (CI-01 violée)
+
+  [T009] Reseau1
+    Label réel   : fraude
+    Neural       : atypique (confiance=0.99)
+    P(fraude)    : 0.86 | Score sym : 25pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=atypique | symbolique=critique(25pts) | problog=P(frau...
+
+    ⚠ [HAUT] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
+    ⚠ [CRITIQUE] Règle D3 — Circuit de blanchiment détecté (1 boucle(s))
+    ⚠ [CRITIQUE] Règle D4 — IBAN partagé entre acteurs distincts
+
+  [T010] FraudeMax
+    Label réel   : fraude
+    Neural       : fraude (confiance=0.95)
+    P(fraude)    : 0.96 | Score sym : 52pts
+    Convergence  : ✓
+    Explication  : Décision hybride : neural=fraude | symbolique=critique(52pts) | problog=P(fraude...
+
+    ⚠ [HAUT] Règle A1 — Accaparement urbain : 6 parcelles urbaines (seuil=3)
+    ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 8 parcelles au total
+    ⚠ [HAUT] Règle B1 — Revente rapide : 3 mois (seuil=12)
+    ⚠ [HAUT] Règle B2 — Plus-value anormale : 200% (seuil=50%)
+    ⚠ [CRITIQUE] Règle C1 — Conflit d'intérêt direct (CI-01 violée)
+    ⚠ [HAUT] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
+    ⚠ [CRITIQUE] Règle D3 — Circuit de blanchiment détecté (2 boucle(s))
+    ⚠ [CRITIQUE] Règle D4 — IBAN partagé entre acteurs distincts
+
+── ÉLEVÉ 🟠 (───────────────────────────────────────────
+
+  [T004] Specul1
+    Label réel   : speculation
+    Neural       : speculateur (confiance=0.99)
+    P(fraude)    : 0.53 | Score sym : 10pts
+    Convergence  : ✓
+    Explication  : Décision hybride : neural=speculateur | symbolique=haut(10pts) | problog=P(fraud...
+
+    ⚠ [HAUT] Règle B1 — Revente rapide : 5 mois (seuil=12)
+    ⚠ [HAUT] Règle B2 — Plus-value anormale : 120% (seuil=50%)
+
+  [T005] Specul2
+    Label réel   : speculation
+    Neural       : speculateur (confiance=0.96)
+    P(fraude)    : 0.50 | Score sym : 10pts
+    Convergence  : ✓
+    Explication  : Décision hybride : neural=speculateur | symbolique=haut(10pts) | problog=P(fraud...
+
+    ⚠ [HAUT] Règle B1 — Revente rapide : 7 mois (seuil=12)
+    ⚠ [HAUT] Règle B2 — Plus-value anormale : 90% (seuil=50%)
+
+── MOYEN 🟡 (───────────────────────────────────────────
+
+  [T001] Standard1
+    Label réel   : standard
+    Neural       : atypique (confiance=0.84)
+    P(fraude)    : 0.37 | Score sym : 0pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+
+
+  [T002] Standard2
+    Label réel   : standard
+    Neural       : atypique (confiance=0.84)
+    P(fraude)    : 0.37 | Score sym : 0pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+
+
+  [T003] Standard3
+    Label réel   : standard
+    Neural       : atypique (confiance=0.84)
+    P(fraude)    : 0.37 | Score sym : 0pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+
+
+  [T006] Accap1
+    Label réel   : accaparement
+    Neural       : atypique (confiance=0.41)
+    P(fraude)    : 0.47 | Score sym : 7pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=atypique | symbolique=moyen(7pts) | problog=P(fraude)=...
+
+    ⚠ [HAUT] Règle A1 — Accaparement urbain : 5 parcelles urbaines (seuil=3)
+    ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 6 parcelles au total
+
+  [T007] Accap2
+    Label réel   : accaparement
+    Neural       : atypique (confiance=0.68)
+    P(fraude)    : 0.47 | Score sym : 7pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=atypique | symbolique=moyen(7pts) | problog=P(fraude)=...
+
+    ⚠ [HAUT] Règle A1 — Accaparement urbain : 4 parcelles urbaines (seuil=3)
+    ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 5 parcelles au total

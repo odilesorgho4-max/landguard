@@ -1,0 +1,439 @@
+[
+  {
+    "id": "T001",
+    "nom": "Standard1",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.1417,
+        "atypique": 0.8432,
+        "speculateur": 0.0116,
+        "fraude": 0.0035
+      },
+      "confiance": 0.8432
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.615,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.369
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.369
+    }
+  },
+  {
+    "id": "T002",
+    "nom": "Standard2",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.1417,
+        "atypique": 0.8432,
+        "speculateur": 0.0116,
+        "fraude": 0.0035
+      },
+      "confiance": 0.8432
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.615,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.369
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.369
+    }
+  },
+  {
+    "id": "T003",
+    "nom": "Standard3",
+    "label_gt": "standard",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.1417,
+        "atypique": 0.8432,
+        "speculateur": 0.0116,
+        "fraude": 0.0035
+      },
+      "confiance": 0.8432
+    },
+    "alertes": [],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.615,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.369
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)=0.37 | niveau_final=moyen | règles=[] | convergence=NON",
+      "score_sym": 0,
+      "p_fraude": 0.369
+    }
+  },
+  {
+    "id": "T004",
+    "nom": "Specul1",
+    "label_gt": "speculation",
+    "neural": {
+      "classe": "speculateur",
+      "probabilites": {
+        "standard": 0.0004,
+        "atypique": 0.0042,
+        "speculateur": 0.9919,
+        "fraude": 0.0035
+      },
+      "confiance": 0.9919
+    },
+    "alertes": [
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 5 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 120% (seuil=50%)"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.88,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.528
+    },
+    "fusion": {
+      "niveau_final": "haut",
+      "convergence": true,
+      "explication": "Décision hybride : neural=speculateur | symbolique=haut(10pts) | problog=P(fraude)=0.53 | niveau_final=haut | règles=['B1', 'B2'] | convergence=OUI",
+      "score_sym": 10,
+      "p_fraude": 0.528
+    }
+  },
+  {
+    "id": "T005",
+    "nom": "Specul2",
+    "label_gt": "speculation",
+    "neural": {
+      "classe": "speculateur",
+      "probabilites": {
+        "standard": 0.0016,
+        "atypique": 0.0311,
+        "speculateur": 0.9619,
+        "fraude": 0.0055
+      },
+      "confiance": 0.9619
+    },
+    "alertes": [
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 7 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 90% (seuil=50%)"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.835,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.501
+    },
+    "fusion": {
+      "niveau_final": "haut",
+      "convergence": true,
+      "explication": "Décision hybride : neural=speculateur | symbolique=haut(10pts) | problog=P(fraude)=0.50 | niveau_final=haut | règles=['B1', 'B2'] | convergence=OUI",
+      "score_sym": 10,
+      "p_fraude": 0.501
+    }
+  },
+  {
+    "id": "T006",
+    "nom": "Accap1",
+    "label_gt": "accaparement",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.2587,
+        "atypique": 0.4099,
+        "speculateur": 0.2016,
+        "fraude": 0.1298
+      },
+      "confiance": 0.4099
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 5 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 6 parcelles au total"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.615,
+      "accapareur": 0.95,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.4674
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=moyen(7pts) | problog=P(fraude)=0.47 | niveau_final=moyen | règles=['A1', 'A4'] | convergence=NON",
+      "score_sym": 7,
+      "p_fraude": 0.4674
+    }
+  },
+  {
+    "id": "T007",
+    "nom": "Accap2",
+    "label_gt": "accaparement",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.1891,
+        "atypique": 0.6766,
+        "speculateur": 0.1001,
+        "fraude": 0.0341
+      },
+      "confiance": 0.6766
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 4 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 5 parcelles au total"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.615,
+      "accapareur": 0.95,
+      "conflit": 0.0,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.4674
+    },
+    "fusion": {
+      "niveau_final": "moyen",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=moyen(7pts) | problog=P(fraude)=0.47 | niveau_final=moyen | règles=['A1', 'A4'] | convergence=NON",
+      "score_sym": 7,
+      "p_fraude": 0.4674
+    }
+  },
+  {
+    "id": "T008",
+    "nom": "Conflit1",
+    "label_gt": "fraude",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.1417,
+        "atypique": 0.8432,
+        "speculateur": 0.0116,
+        "fraude": 0.0035
+      },
+      "confiance": 0.8432
+    },
+    "alertes": [
+      {
+        "regle": "C1",
+        "cat": "conflit",
+        "niveau": "critique",
+        "desc": "Conflit d'intérêt direct (CI-01 violée)"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.0,
+      "speculateur": 0.615,
+      "accapareur": 0.05,
+      "conflit": 0.97,
+      "blanchiment": 0.0,
+      "fraude_globale": 0.9603
+    },
+    "fusion": {
+      "niveau_final": "critique",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=haut(10pts) | problog=P(fraude)=0.96 | niveau_final=critique | règles=['C1'] | convergence=NON",
+      "score_sym": 10,
+      "p_fraude": 0.9603
+    }
+  },
+  {
+    "id": "T009",
+    "nom": "Reseau1",
+    "label_gt": "fraude",
+    "neural": {
+      "classe": "atypique",
+      "probabilites": {
+        "standard": 0.003,
+        "atypique": 0.9948,
+        "speculateur": 0.0019,
+        "fraude": 0.0003
+      },
+      "confiance": 0.9948
+    },
+    "alertes": [
+      {
+        "regle": "D1",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Téléphone partagé (CI-05 → suspicion prête-nom)"
+      },
+      {
+        "regle": "D3",
+        "cat": "reseau",
+        "niveau": "critique",
+        "desc": "Circuit de blanchiment détecté (1 boucle(s))"
+      },
+      {
+        "regle": "D4",
+        "cat": "reseau",
+        "niveau": "critique",
+        "desc": "IBAN partagé entre acteurs distincts"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.8,
+      "speculateur": 0.615,
+      "accapareur": 0.05,
+      "conflit": 0.0,
+      "blanchiment": 0.93,
+      "fraude_globale": 0.8649
+    },
+    "fusion": {
+      "niveau_final": "critique",
+      "convergence": false,
+      "explication": "Décision hybride : neural=atypique | symbolique=critique(25pts) | problog=P(fraude)=0.86 | niveau_final=critique | règles=['D1', 'D3', 'D4'] | convergence=NON",
+      "score_sym": 25,
+      "p_fraude": 0.8649
+    }
+  },
+  {
+    "id": "T010",
+    "nom": "FraudeMax",
+    "label_gt": "fraude",
+    "neural": {
+      "classe": "fraude",
+      "probabilites": {
+        "standard": 0.0002,
+        "atypique": 0.0002,
+        "speculateur": 0.0472,
+        "fraude": 0.9523
+      },
+      "confiance": 0.9523
+    },
+    "alertes": [
+      {
+        "regle": "A1",
+        "cat": "accaparement",
+        "niveau": "haut",
+        "desc": "Accaparement urbain : 6 parcelles urbaines (seuil=3)"
+      },
+      {
+        "regle": "A4",
+        "cat": "accaparement",
+        "niveau": "moyen",
+        "desc": "Multipropriété mixte : 8 parcelles au total"
+      },
+      {
+        "regle": "B1",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Revente rapide : 3 mois (seuil=12)"
+      },
+      {
+        "regle": "B2",
+        "cat": "speculation",
+        "niveau": "haut",
+        "desc": "Plus-value anormale : 200% (seuil=50%)"
+      },
+      {
+        "regle": "C1",
+        "cat": "conflit",
+        "niveau": "critique",
+        "desc": "Conflit d'intérêt direct (CI-01 violée)"
+      },
+      {
+        "regle": "D1",
+        "cat": "reseau",
+        "niveau": "haut",
+        "desc": "Téléphone partagé (CI-05 → suspicion prête-nom)"
+      },
+      {
+        "regle": "D3",
+        "cat": "reseau",
+        "niveau": "critique",
+        "desc": "Circuit de blanchiment détecté (2 boucle(s))"
+      },
+      {
+        "regle": "D4",
+        "cat": "reseau",
+        "niveau": "critique",
+        "desc": "IBAN partagé entre acteurs distincts"
+      }
+    ],
+    "probs": {
+      "prete_nom": 0.8,
+      "speculateur": 0.88,
+      "accapareur": 0.95,
+      "conflit": 0.97,
+      "blanchiment": 0.93,
+      "fraude_globale": 0.9603
+    },
+    "fusion": {
+      "niveau_final": "critique",
+      "convergence": true,
+      "explication": "Décision hybride : neural=fraude | symbolique=critique(52pts) | problog=P(fraude)=0.96 | niveau_final=critique | règles=['A1', 'A4', 'B1', 'B2', 'C1', 'D1', 'D3', 'D4'] | convergence=OUI",
+      "score_sym": 52,
+      "p_fraude": 0.9603
+    }
+  }
+]
