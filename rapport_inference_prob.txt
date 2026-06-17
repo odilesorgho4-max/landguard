@@ -1,0 +1,127 @@
+============================================================
+  LANDGUARD NEURO-SYMBOLIC AI
+  rapport_inference_prob.txt
+  Résultats d'inférence ProbLog — Partie 3
+  Générés le : 2026-06-11
+============================================================
+
+LÉGENDE DES NIVEAUX DE RISQUE
+  Faible   : P < 0.30   [F]
+  Moyen    : 0.30–0.60  [M]
+  Élevé    : 0.60–0.80  [E]
+  Critique : P ≥ 0.80   [C]
+
+============================================================
+SECTION 1 — SCORES DE FRAUDE GLOBALE (fraude_probable/1)
+============================================================
+
+Acteur          P(fraude)   Niveau    Règles déclenchées
+-----------     ---------   -------   ----------------------------------
+konaté          0.9900      [C]       conflit_certain (C1)
+mariama         0.9312      [C]       speculateur_confirme + prete_nom_confirme
+abdou           0.9150      [C]       accapareur + accapareur_reseau
+delta_group     0.8823      [C]       prete_nom_financier + reseau_coordonne
+oumar           0.8741      [C]       prete_nom_confirme + prete_nom_financier
+aminata         0.7654      [E]       prete_nom + prete_nom_confirme
+moussa          0.6812      [E]       accapareur_reseau + speculateur_passif
+traoré          0.3201      [M]       favoritisme (seuil = 2 dossiers)
+fatou           0.0842      [F]       fraude_base uniquement
+ibrahim         0.0500      [F]       fraude_base uniquement
+youssouf        0.0500      [F]       fraude_base uniquement
+kadiatou        0.0500      [F]       fraude_base uniquement
+bintou          0.0500      [F]       fraude_base uniquement
+
+============================================================
+SECTION 2 — PRÊTE-NOM (prete_nom/2)
+============================================================
+
+Paire (X, Y)                P(prete_nom)   Niveau   Base
+--------------------------  ------------   -------  ----------------------
+(mariama, oumar)            0.8000         [C]      partage_telephone
+(oumar,   aminata)          0.8000         [C]      partage_telephone
+(mariama, aminata)          0.6500         [E]      partage_adresse (trans.)
+(oumar,   delta_group)      0.8500         [C]      partage_iban
+
+Prête-nom confirmé (cumul tél + adresse)
+(mariama, oumar)            0.9200         [C]
+(oumar,   aminata)          0.9200         [C]
+
+============================================================
+SECTION 3 — SPÉCULATION (speculateur/1)
+============================================================
+
+Acteur       P(speculateur)   P(speculateur_confirme)   Niveau
+---------    --------------   -----------------------   -------
+mariama      0.7000           0.8800                    [C]
+abdou        0.5500           0.0000                    [M]  (pas de revente)
+moussa       0.5500           0.0000                    [M]  (pas de revente)
+delta_group  0.0500           0.0000                    [F]
+
+============================================================
+SECTION 4 — ACCAPAREMENT (accapareur/1)
+============================================================
+
+Acteur       P(accapareur)   P(accapareur_reseau)   Niveau
+---------    -------------   --------------------   -------
+abdou        0.9500          0.7500                 [C]
+moussa       0.0500          0.7500                 [E]  (via réseau abdou)
+delta_group  0.0500          0.0500                 [F]
+
+============================================================
+SECTION 5 — CONFLITS D'INTÉRÊTS (conflit/1)
+============================================================
+
+Agent        P(conflit_certain)   P(conflit_probable)   P(favoritisme)   Niveau
+---------    -----------------   ------------------    --------------   -------
+konaté       0.9700               0.7200                0.6800           [C]
+traoré       0.0000               0.0000                0.3200           [M]
+diallo       0.0000               0.0000                0.0000           [F]
+
+============================================================
+SECTION 6 — BLANCHIMENT & RÉSEAUX COORDONNÉS
+============================================================
+
+Acteur / Triplet               Prédicat              P       Niveau
+-----------------------------  --------------------  ------  -------
+(mariama, oumar, aminata)      blanchiment           0.0000  [F]  (pas de circuit)
+(oumar, delta_group)           reseau_coordonne      0.8500  [C]
+(mariama, oumar)               reseau_coordonne      0.7800  [E]
+abdou                          reseau_coordonne      0.7800  [E]
+
+============================================================
+SECTION 7 — SYNTHÈSE PAR NIVEAU DE RISQUE
+============================================================
+
+[C] CRITIQUE (P ≥ 0.80) — Action immédiate requise
+    • konaté      (0.99) : conflit d'intérêt direct confirmé
+    • mariama     (0.93) : spéculation + réseau prête-nom
+    • abdou       (0.92) : accaparement massif (5 parcelles urbaines)
+    • delta_group (0.88) : réseau financier coordonné
+    • oumar       (0.87) : nœud central du réseau prête-nom
+
+[E] ÉLEVÉ (0.60–0.80) — Investigation approfondie
+    • aminata     (0.77) : membre réseau prête-nom
+    • moussa      (0.68) : accaparement familial (lié à abdou)
+
+[M] MOYEN (0.30–0.60) — Surveillance renforcée
+    • traoré      (0.32) : signaux faibles de favoritisme
+
+[F] FAIBLE (P < 0.30) — Profil standard
+    • fatou, ibrahim, youssouf, kadiatou, bintou
+
+============================================================
+SECTION 8 — TESTS DE BORNES (intégrité probabiliste)
+============================================================
+
+Test                                  Attendu     Obtenu   Résultat
+------------------------------------  ----------  -------  --------
+P(conflit_certain | konaté)           ≥ 0.95      0.970    ✓ PASS
+P(fraude | acteur sans indice)        < 0.10      0.050    ✓ PASS
+P(prete_nom_confirme) ≥ P(prete_nom)  monotonie   0.92≥0.80 ✓ PASS
+P(speculateur_confirme) ≥ P(spec.)    monotonie   0.88≥0.70 ✓ PASS
+P(fraude_probable) ∈ [0,1]            ∀ acteurs   OK       ✓ PASS
+Somme niveaux = nb acteurs            13          13       ✓ PASS
+
+============================================================
+FIN DU RAPPORT
+============================================================

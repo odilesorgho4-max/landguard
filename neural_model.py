@@ -1,8 +1,8 @@
 """
 ============================================================
  LandGuard Neuro-Symbolic AI
- neural_model.py — Module neuronal PyTorch (Partie 4)
- Classification : STANDARD | ATYPIQUE | SPECULATEUR | FRAUDEUR_PROBABLE
+ neural_model.py — Version 2 (labels cohérents)
+ Classes : standard | accaparement | speculation | reseau | fraude
 ============================================================
 """
 
@@ -15,24 +15,24 @@ import pandas as pd
 from pathlib import Path
 
 # ============================================================
-# SECTION 1 : Classes et features
+# CLASSES ET FEATURES — cohérents avec dataset.csv
 # ============================================================
 
-CLASSES = ["standard", "atypique", "speculateur", "fraude"]
+CLASSES = ["standard", "accaparement", "speculation", "reseau", "fraude"]
 N_CLASSES = len(CLASSES)
 
 FEATURE_NAMES = [
-    "nb_parcelles",       # entier : nombre total de parcelles détenues
-    "frequence_revente",  # float  : nb reventes / nb parcelles
-    "ratio_plus_value",   # float  : (prix_vente - prix_achat) / prix_achat
-    "nb_liens_reseau",    # entier : nb de liens sociaux
-    "partage_telephone",  # binaire : 0 ou 1
-    "age_premier_achat",  # float  : années depuis le premier achat
+    "nb_parcelles",
+    "frequence_revente",
+    "ratio_plus_value",
+    "nb_liens_reseau",
+    "partage_telephone",
+    "age_premier_achat",
 ]
 N_FEATURES = len(FEATURE_NAMES)
 
 # ============================================================
-# SECTION 2 : Dataset
+# DATASET
 # ============================================================
 
 class FoncierDataset(Dataset):
@@ -40,7 +40,9 @@ class FoncierDataset(Dataset):
         self.features = torch.tensor(data[FEATURE_NAMES].values, dtype=torch.float32)
         if label_col in data.columns:
             label_map = {c: i for i, c in enumerate(CLASSES)}
-            self.labels = torch.tensor(data[label_col].map(label_map).values, dtype=torch.long)
+            self.labels = torch.tensor(
+                data[label_col].map(label_map).values, dtype=torch.long
+            )
         else:
             self.labels = None
 
@@ -52,25 +54,16 @@ class FoncierDataset(Dataset):
             return self.features[idx], self.labels[idx]
         return self.features[idx]
 
-    @staticmethod
-    def from_csv(path: str) -> "FoncierDataset":
-        return FoncierDataset(pd.read_csv(path))
-
 
 # ============================================================
-# SECTION 3 : Architecture réseau
+# ARCHITECTURE
 # ============================================================
 
 class FraudDetectorNet(nn.Module):
     """
-    MLP 3 couches pour la classification de fraude foncière.
-
-    Input(6) -> BN -> Dense(64) -> ReLU -> Dropout(0.3)
-             -> Dense(128) -> ReLU -> Dropout(0.3)
-             -> Dense(64)  -> ReLU -> Dropout(0.2)
-             -> Dense(4)   -> Softmax
+    MLP 3 couches — 6 features → 5 classes
+    standard | accaparement | speculation | reseau | fraude
     """
-
     def __init__(self, n_features=N_FEATURES, n_classes=N_CLASSES,
                  hidden_sizes=[64, 128, 64], dropout_rates=[0.3, 0.3, 0.2]):
         super().__init__()
@@ -104,18 +97,20 @@ class FraudDetectorNet(nn.Module):
 
 
 # ============================================================
-# SECTION 4 : Entraînement
+# ENTRAINEMENT
 # ============================================================
 
 class FraudTrainer:
     def __init__(self, model, lr=1e-3, weight_decay=1e-4, device=None):
-        self.device  = device or ("cuda" if torch.cuda.is_available() else "cpu")
-        self.model   = model.to(self.device)
+        self.device    = device or ("cuda" if torch.cuda.is_available() else "cpu")
+        self.model     = model.to(self.device)
         self.optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
-        self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(self.optimizer, patience=5, factor=0.5)
-        weights = torch.tensor([1.0, 2.0, 3.0, 4.0], device=self.device)
+        self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+            self.optimizer, patience=5, factor=0.5)
+        # Poids : fraude et reseau plus importants
+        weights = torch.tensor([1.0, 3.0, 3.0, 4.0, 5.0], device=self.device)
         self.criterion = nn.CrossEntropyLoss(weight=weights)
-        self.history = {"train_loss": [], "val_loss": [], "val_acc": []}
+        self.history   = {"train_loss": [], "val_loss": [], "val_acc": []}
 
     def train_epoch(self, loader):
         self.model.train()
@@ -159,100 +154,139 @@ class FraudTrainer:
     def save(self, path):
         torch.save({
             "model_state_dict": self.model.state_dict(),
-            "optimizer_state_dict": self.optimizer.state_dict(),
-            "history": self.history,
             "n_features": self.model.n_features,
             "n_classes":  self.model.n_classes,
             "classes":    CLASSES,
             "feature_names": FEATURE_NAMES,
+            "history": self.history,
         }, path)
-        print(f"Modèle sauvegardé : {path}")
+        print(f"Modele sauvegarde : {path}")
 
 
 # ============================================================
-# SECTION 5 : Chargement
+# CHARGEMENT
 # ============================================================
 
 def load_model(path: str, device=None) -> FraudDetectorNet:
     device = device or ("cuda" if torch.cuda.is_available() else "cpu")
-    ckpt = torch.load(path, map_location=device)
-    model = FraudDetectorNet(n_features=ckpt["n_features"], n_classes=ckpt["n_classes"])
+    ckpt   = torch.load(path, map_location=device)
+    model  = FraudDetectorNet(
+        n_features=ckpt["n_features"],
+        n_classes=ckpt["n_classes"]
+    )
     model.load_state_dict(ckpt["model_state_dict"])
     model.to(device).eval()
-    print(f"Modèle chargé : {path}")
+    print(f"Modele charge : {path}")
     return model
 
 
 # ============================================================
-# SECTION 6 : Données synthétiques
+# GENERATION DONNEES SYNTHETIQUES (cohérentes avec dataset.csv)
 # ============================================================
 
-def generate_synthetic_data(n_samples=200, seed=42) -> pd.DataFrame:
+def generate_synthetic_data(n_samples=250, seed=42) -> pd.DataFrame:
     rng  = np.random.default_rng(seed)
     rows = []
 
     def r(cls, nb_p, freq, pv, liens, tel, age):
-        return dict(nb_parcelles=nb_p, frequence_revente=freq, ratio_plus_value=pv,
-                    nb_liens_reseau=liens, partage_telephone=tel, age_premier_achat=age, label=cls)
+        return dict(nb_parcelles=nb_p, frequence_revente=freq,
+                    ratio_plus_value=pv, nb_liens_reseau=liens,
+                    partage_telephone=tel, age_premier_achat=age, label=cls)
 
-    n_std = int(n_samples * 0.4)
-    n_aty = int(n_samples * 0.2)
-    n_spe = int(n_samples * 0.2)
-    n_fra = n_samples - n_std - n_aty - n_spe
+    # Standard (40%)
+    for _ in range(int(n_samples * 0.40)):
+        rows.append(r("standard",
+            rng.integers(1,3), rng.uniform(0,.1), rng.uniform(-.1,.3),
+            rng.integers(0,2), 0, rng.uniform(1,15)))
 
-    for _ in range(n_std):
-        rows.append(r("standard",    rng.integers(1,3),  rng.uniform(0,.1),  rng.uniform(-.1,.3), rng.integers(0,2), 0,                         rng.uniform(1,15)))
-    for _ in range(n_aty):
-        rows.append(r("atypique",    rng.integers(2,4),  rng.uniform(.1,.4), rng.uniform(.3,.5),  rng.integers(1,3), int(rng.random()<.3),       rng.uniform(.5,5)))
-    for _ in range(n_spe):
-        rows.append(r("speculateur", rng.integers(3,6),  rng.uniform(.4,.8), rng.uniform(.5,1.5), rng.integers(1,4), int(rng.random()<.5),       rng.uniform(.2,3)))
+    # Accaparement (15%)
+    for _ in range(int(n_samples * 0.15)):
+        rows.append(r("accaparement",
+            rng.integers(4,9), rng.uniform(0,.2), rng.uniform(.1,.4),
+            rng.integers(1,4), int(rng.random()<.3), rng.uniform(2,10)))
+
+    # Speculation (15%)
+    for _ in range(int(n_samples * 0.15)):
+        rows.append(r("speculation",
+            rng.integers(2,5), rng.uniform(.4,.9), rng.uniform(.5,2.),
+            rng.integers(1,3), int(rng.random()<.3), rng.uniform(.2,3)))
+
+    # Reseau (15%)
+    for _ in range(int(n_samples * 0.15)):
+        rows.append(r("reseau",
+            rng.integers(2,6), rng.uniform(.2,.6), rng.uniform(.2,.8),
+            rng.integers(3,8), 1, rng.uniform(.5,4)))
+
+    # Fraude (15%)
+    n_fra = n_samples - len(rows)
     for _ in range(n_fra):
-        rows.append(r("fraude",      rng.integers(4,10), rng.uniform(.5,1.), rng.uniform(.8,3.),  rng.integers(3,8), 1,                          rng.uniform(.1,2)))
+        rows.append(r("fraude",
+            rng.integers(5,10), rng.uniform(.5,1.), rng.uniform(.8,3.),
+            rng.integers(4,9), 1, rng.uniform(.1,2)))
 
-    return pd.DataFrame(rows).sample(frac=1, random_state=seed).reset_index(drop=True)
+    df = pd.DataFrame(rows).sample(frac=1, random_state=seed).reset_index(drop=True)
+    return df
 
 
 # ============================================================
-# SECTION 7 : Inférence acteur (pour main.py)
+# INFERENCE
 # ============================================================
 
 def predict_actor(features: dict, model: FraudDetectorNet) -> dict:
-    x = torch.tensor([[features[f] for f in FEATURE_NAMES]], dtype=torch.float32)
+    x     = torch.tensor([[features[f] for f in FEATURE_NAMES]], dtype=torch.float32)
     proba = model.predict_proba(x).squeeze().tolist()
     classe = CLASSES[int(np.argmax(proba))]
-    return {"classe": classe, "probabilites": dict(zip(CLASSES, proba)), "confiance": max(proba)}
+    return {
+        "classe":       classe,
+        "probabilites": dict(zip(CLASSES, [round(p,4) for p in proba])),
+        "confiance":    round(max(proba), 4),
+    }
 
 
 # ============================================================
-# Entraînement principal
+# ENTRAINEMENT PRINCIPAL
 # ============================================================
 
 def train_and_save(dataset_path="dataset.csv", output_path="model_weights.pth",
-                   epochs=100, batch_size=16, val_split=0.2):
-    print("=== LandGuard — Entraînement neuronal ===\n")
+                   epochs=120, batch_size=16, val_split=0.2):
+    print("=== LandGuard — Entrainement neuronal (v2) ===\n")
+
     if Path(dataset_path).exists():
         df = pd.read_csv(dataset_path)
-        print(f"Dataset : {len(df)} dossiers")
+        df["label"] = df["label"].replace({"limite": "reseau"})
+        print(f"Dataset CSV : {len(df)} dossiers")
+        # Si dataset trop petit, ajouter donnees synthetiques
+        if len(df) < 100:
+            print("Dataset trop petit — ajout donnees synthetiques...")
+            df_synth = generate_synthetic_data(300)
+            df = pd.concat([df, df_synth]).reset_index(drop=True)
+            print(f"Dataset final : {len(df)} dossiers (CSV + synthetiques)")
     else:
-        print("Génération données synthétiques...")
-        df = generate_synthetic_data(200)
+        print("Generation donnees synthetiques...")
+        df = generate_synthetic_data(250)
 
-    for col in ["nb_parcelles","frequence_revente","ratio_plus_value","nb_liens_reseau","age_premier_achat"]:
-        m, s = df[col].mean(), df[col].std()
-        df[col] = (df[col] - m) / (s + 1e-8)
+    # Normalisation
+    for col in ["nb_parcelles","frequence_revente","ratio_plus_value",
+                "nb_liens_reseau","age_premier_achat"]:
+        if col in df.columns:
+            m, s = df[col].mean(), df[col].std()
+            df[col] = (df[col] - m) / (s + 1e-8)
 
-    split = int(len(df) * (1 - val_split))
-    train_ds = FoncierDataset(df.iloc[:split])
-    val_ds   = FoncierDataset(df.iloc[split:])
+    split        = int(len(df) * (1 - val_split))
+    train_ds     = FoncierDataset(df.iloc[:split])
+    val_ds       = FoncierDataset(df.iloc[split:])
     train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
     val_loader   = DataLoader(val_ds,   batch_size=batch_size)
+
+    print(f"Train : {len(train_ds)} | Val : {len(val_ds)}\n")
 
     model   = FraudDetectorNet()
     trainer = FraudTrainer(model)
     trainer.fit(train_loader, val_loader, epochs=epochs)
     trainer.save(output_path)
+
     _, acc = trainer.evaluate(val_loader)
-    print(f"\nPrécision validation finale : {acc:.3f}")
+    print(f"\nPrecision finale : {acc:.3f}")
     return model, trainer
 
 

@@ -71,7 +71,7 @@ def eval_regles_symboliques(dossier: dict) -> list:
 
     # Catégorie A — Accaparement
     if nb_pu >= 4:
-        alertes.append({"regle":"A1","cat":"accaparement","niveau":"haut",
+        alertes.append({"regle":"A1","cat":"accaparement","niveau":"eleve",
             "desc":f"Accaparement urbain : {nb_pu} parcelles urbaines (seuil=3)"})
     if nb_p >= 5:
         alertes.append({"regle":"A4","cat":"accaparement","niveau":"moyen",
@@ -79,10 +79,10 @@ def eval_regles_symboliques(dossier: dict) -> list:
 
     # Catégorie B — Spéculation
     if duree < 12 and freq_r > 0:
-        alertes.append({"regle":"B1","cat":"speculation","niveau":"haut",
+        alertes.append({"regle":"B1","cat":"speculation","niveau":"eleve",
             "desc":f"Revente rapide : {duree} mois (seuil=12)"})
     if ratio_pv > 0.5:
-        alertes.append({"regle":"B2","cat":"speculation","niveau":"haut",
+        alertes.append({"regle":"B2","cat":"speculation","niveau":"eleve",
             "desc":f"Plus-value anormale : {ratio_pv*100:.0f}% (seuil=50%)"})
 
     # Catégorie C — Conflits
@@ -93,15 +93,15 @@ def eval_regles_symboliques(dossier: dict) -> list:
         alertes.append({"regle":"C2","cat":"conflit","niveau":"critique",
             "desc":"Conflit indirect : dossiers de proches familiaux"})
     if fav or nb_dos >= 3:
-        alertes.append({"regle":"C3","cat":"conflit","niveau":"haut",
+        alertes.append({"regle":"C3","cat":"conflit","niveau":"eleve",
             "desc":f"Favoritisme répétitif : {nb_dos} dossiers pour même acteur"})
 
     # Catégorie D — Réseaux
     if tel:
-        alertes.append({"regle":"D1","cat":"reseau","niveau":"haut",
+        alertes.append({"regle":"D1","cat":"reseau","niveau":"eleve",
             "desc":"Téléphone partagé (CI-05 → suspicion prête-nom)"})
     if adr and nb_p > 0:
-        alertes.append({"regle":"D2","cat":"reseau","niveau":"haut",
+        alertes.append({"regle":"D2","cat":"reseau","niveau":"eleve",
             "desc":"Adresse partagée entre propriétaires"})
     if circ >= 1:
         alertes.append({"regle":"D3","cat":"reseau","niveau":"critique",
@@ -117,14 +117,14 @@ def eval_regles_symboliques(dossier: dict) -> list:
 # SECTION 3 : Calcul du score symbolique
 # ============================================================
 
-POIDS = {"critique": 10, "haut": 5, "moyen": 2, "faible": 1}
+POIDS = {"critique": 10, "eleve": 5, "moyen": 2, "faible": 1}
 
 def score_symbolique(alertes: list) -> int:
     return sum(POIDS.get(a["niveau"], 1) for a in alertes)
 
 def niveau_risque_sym(score: int) -> str:
     if score >= 20: return "critique"
-    if score >= 10: return "haut"
+    if score >= 10: return "eleve"
     if score >= 4:  return "moyen"
     return "faible"
 
@@ -208,11 +208,11 @@ def fusionner(neural: dict, alertes: list, probs: dict) -> dict:
     # Fusion : priorité aux signaux convergents
     votes = [niveau_s, niv_p]
     if classe_n in ["fraude", "speculateur"]:
-        votes.append("haut")
+        votes.append("eleve")
     if classe_n == "fraude" and score_s >= 10:
         votes.append("critique")
 
-    ordre = ["critique", "haut", "eleve", "moyen", "faible"]
+    ordre = ["critique", "eleve", "eleve", "moyen", "faible"]
     niveau_final = min(votes, key=lambda x: ordre.index(x)) if votes else "faible"
 
     regles_declenchees = [a["regle"] for a in alertes]
@@ -344,7 +344,7 @@ def generer_rapport_txt(resultats: list, path: str):
     ]
 
     critiques = [r for r in resultats if r["fusion"]["niveau_final"] == "critique"]
-    hauts     = [r for r in resultats if r["fusion"]["niveau_final"] == "haut"]
+    hauts     = [r for r in resultats if r["fusion"]["niveau_final"] == "eleve"]
     moyens    = [r for r in resultats if r["fusion"]["niveau_final"] == "moyen"]
     faibles   = [r for r in resultats if r["fusion"]["niveau_final"] == "faible"]
 
@@ -395,8 +395,8 @@ def _afficher_synthese(resultats: list):
     # Précision vs label réel
     correct = sum(
         1 for r in resultats
-        if r["label_gt"] in ["fraude","accaparement","speculation"] and
-           r["fusion"]["niveau_final"] in ["critique","haut","moyen"]
+if r["label_gt"] == r["neural"]["classe"] and True and
+          r["fusion"]["niveau_final"] in ["critique","eleve","moyen"]
         or r["label_gt"] == "standard" and r["fusion"]["niveau_final"] == "faible"
     )
     acc = correct / len(resultats) if resultats else 0

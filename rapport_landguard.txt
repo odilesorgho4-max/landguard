@@ -1,137 +1,125 @@
 ==============================================================
   LANDGUARD NEURO-SYMBOLIC AI — RAPPORT CONSOLIDÉ
-  Généré le : 2026-06-13 03:07:57
+  Généré le : 2026-06-17 06:43:05
 ==============================================================
 
 SYNTHÈSE : 50 dossiers analysés
-  🔴 Critique : 9
-  🟠 Élevé    : 10
-  🟡 Moyen    : 31
+  🔴 Critique : 8
+  🟠 Élevé    : 8
+  🟡 Moyen    : 34
   🟢 Faible   : 0
 
 ── CRITIQUE 🔴 (────────────────────────────────────────
 
   [D033] Idrissa Zerbo
     Label réel   : speculation
-    Neural       : speculateur (confiance=0.99)
+    Neural       : speculation (confiance=0.99)
     P(fraude)    : 0.64 | Score sym : 22pts
-    Convergence  : ✓
-    Explication  : Décision hybride : neural=speculateur | symbolique=critique(22pts) | problog=P(f...
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=speculation | symbolique=critique(22pts) | problog=P(f...
 
-    ⚠ [HAUT] Règle A1 — Accaparement urbain : 4 parcelles urbaines (seuil=3)
+    ⚠ [ELEVE] Règle A1 — Accaparement urbain : 4 parcelles urbaines (seuil=3)
     ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 5 parcelles au total
-    ⚠ [HAUT] Règle B1 — Revente rapide : 6 mois (seuil=12)
-    ⚠ [HAUT] Règle B2 — Plus-value anormale : 95% (seuil=50%)
-    ⚠ [HAUT] Règle D2 — Adresse partagée entre propriétaires
+    ⚠ [ELEVE] Règle B1 — Revente rapide : 6 mois (seuil=12)
+    ⚠ [ELEVE] Règle B2 — Plus-value anormale : 95% (seuil=50%)
+    ⚠ [ELEVE] Règle D2 — Adresse partagée entre propriétaires
 
-  [D038] Souleymane Méda
+  [D038] Souleymane Meda
     Label réel   : accaparement
-    Neural       : fraude (confiance=0.65)
+    Neural       : accaparement (confiance=1.00)
     P(fraude)    : 0.52 | Score sym : 22pts
-    Convergence  : ✓
-    Explication  : Décision hybride : neural=fraude | symbolique=critique(22pts) | problog=P(fraude...
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=accaparement | symbolique=critique(22pts) | problog=P(...
 
-    ⚠ [HAUT] Règle A1 — Accaparement urbain : 6 parcelles urbaines (seuil=3)
+    ⚠ [ELEVE] Règle A1 — Accaparement urbain : 6 parcelles urbaines (seuil=3)
     ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 8 parcelles au total
-    ⚠ [HAUT] Règle D2 — Adresse partagée entre propriétaires
+    ⚠ [ELEVE] Règle D2 — Adresse partagée entre propriétaires
     ⚠ [CRITIQUE] Règle D4 — IBAN partagé entre acteurs distincts
 
-  [D039] Jocelyne Kabré
-    Label réel   : accaparement
-    Neural       : fraude (confiance=0.62)
-    P(fraude)    : 0.65 | Score sym : 17pts
-    Convergence  : ✓
-    Explication  : Décision hybride : neural=fraude | symbolique=haut(17pts) | problog=P(fraude)=0....
-
-    ⚠ [HAUT] Règle A1 — Accaparement urbain : 4 parcelles urbaines (seuil=3)
-    ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 6 parcelles au total
-    ⚠ [HAUT] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
-    ⚠ [HAUT] Règle D2 — Adresse partagée entre propriétaires
-
-  [D045] Justin Compaoré
-    Label réel   : limite
-    Neural       : atypique (confiance=0.42)
+  [D045] Justin Compaore
+    Label réel   : reseau
+    Neural       : reseau (confiance=0.99)
     P(fraude)    : 0.41 | Score sym : 20pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=critique(20pts) | problog=P(frau...
+    Explication  : Décision hybride : neural=reseau | symbolique=critique(20pts) | problog=P(fraude...
 
-    ⚠ [HAUT] Règle B1 — Revente rapide : 10 mois (seuil=12)
-    ⚠ [HAUT] Règle B2 — Plus-value anormale : 60% (seuil=50%)
-    ⚠ [HAUT] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
-    ⚠ [HAUT] Règle D2 — Adresse partagée entre propriétaires
+    ⚠ [ELEVE] Règle B1 — Revente rapide : 10 mois (seuil=12)
+    ⚠ [ELEVE] Règle B2 — Plus-value anormale : 60% (seuil=50%)
+    ⚠ [ELEVE] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
+    ⚠ [ELEVE] Règle D2 — Adresse partagée entre propriétaires
 
-  [D046] Réseau Koné-Diallo
+  [D046] Reseau Kone-Diallo
     Label réel   : fraude
-    Neural       : fraude (confiance=0.99)
+    Neural       : fraude (confiance=1.00)
     P(fraude)    : 0.71 | Score sym : 37pts
     Convergence  : ✓
     Explication  : Décision hybride : neural=fraude | symbolique=critique(37pts) | problog=P(fraude...
 
-    ⚠ [HAUT] Règle A1 — Accaparement urbain : 5 parcelles urbaines (seuil=3)
+    ⚠ [ELEVE] Règle A1 — Accaparement urbain : 5 parcelles urbaines (seuil=3)
     ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 6 parcelles au total
-    ⚠ [HAUT] Règle B1 — Revente rapide : 4 mois (seuil=12)
-    ⚠ [HAUT] Règle B2 — Plus-value anormale : 210% (seuil=50%)
-    ⚠ [HAUT] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
-    ⚠ [HAUT] Règle D2 — Adresse partagée entre propriétaires
+    ⚠ [ELEVE] Règle B1 — Revente rapide : 4 mois (seuil=12)
+    ⚠ [ELEVE] Règle B2 — Plus-value anormale : 210% (seuil=50%)
+    ⚠ [ELEVE] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
+    ⚠ [ELEVE] Règle D2 — Adresse partagée entre propriétaires
     ⚠ [CRITIQUE] Règle D4 — IBAN partagé entre acteurs distincts
 
-  [D047] Agent Traoré indirect
+  [D047] Agent Traore indirect
     Label réel   : fraude
-    Neural       : atypique (confiance=0.66)
+    Neural       : fraude (confiance=0.60)
     P(fraude)    : 0.96 | Score sym : 25pts
-    Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=critique(25pts) | problog=P(frau...
+    Convergence  : ✓
+    Explication  : Décision hybride : neural=fraude | symbolique=critique(25pts) | problog=P(fraude...
 
     ⚠ [CRITIQUE] Règle C1 — Conflit d'intérêt direct (CI-01 violée)
     ⚠ [CRITIQUE] Règle C2 — Conflit indirect : dossiers de proches familiaux
-    ⚠ [HAUT] Règle C3 — Favoritisme répétitif : 7 dossiers pour même acteur
+    ⚠ [ELEVE] Règle C3 — Favoritisme répétitif : 7 dossiers pour même acteur
 
-  [D048] Réseau Oumar circulaire
+  [D048] Reseau Oumar circulaire
     Label réel   : fraude
-    Neural       : fraude (confiance=0.98)
+    Neural       : fraude (confiance=1.00)
     P(fraude)    : 0.86 | Score sym : 47pts
     Convergence  : ✓
     Explication  : Décision hybride : neural=fraude | symbolique=critique(47pts) | problog=P(fraude...
 
-    ⚠ [HAUT] Règle A1 — Accaparement urbain : 4 parcelles urbaines (seuil=3)
+    ⚠ [ELEVE] Règle A1 — Accaparement urbain : 4 parcelles urbaines (seuil=3)
     ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 5 parcelles au total
-    ⚠ [HAUT] Règle B1 — Revente rapide : 3 mois (seuil=12)
-    ⚠ [HAUT] Règle B2 — Plus-value anormale : 180% (seuil=50%)
-    ⚠ [HAUT] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
-    ⚠ [HAUT] Règle D2 — Adresse partagée entre propriétaires
+    ⚠ [ELEVE] Règle B1 — Revente rapide : 3 mois (seuil=12)
+    ⚠ [ELEVE] Règle B2 — Plus-value anormale : 180% (seuil=50%)
+    ⚠ [ELEVE] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
+    ⚠ [ELEVE] Règle D2 — Adresse partagée entre propriétaires
     ⚠ [CRITIQUE] Règle D3 — Circuit de blanchiment détecté (3 boucle(s))
     ⚠ [CRITIQUE] Règle D4 — IBAN partagé entre acteurs distincts
 
-  [D049] Promoteur fantôme Kaboré
+  [D049] Promoteur fantome Kabore
     Label réel   : fraude
     Neural       : fraude (confiance=1.00)
     P(fraude)    : 0.67 | Score sym : 37pts
     Convergence  : ✓
     Explication  : Décision hybride : neural=fraude | symbolique=critique(37pts) | problog=P(fraude...
 
-    ⚠ [HAUT] Règle A1 — Accaparement urbain : 7 parcelles urbaines (seuil=3)
+    ⚠ [ELEVE] Règle A1 — Accaparement urbain : 7 parcelles urbaines (seuil=3)
     ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 9 parcelles au total
-    ⚠ [HAUT] Règle B1 — Revente rapide : 2 mois (seuil=12)
-    ⚠ [HAUT] Règle B2 — Plus-value anormale : 250% (seuil=50%)
-    ⚠ [HAUT] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
-    ⚠ [HAUT] Règle D2 — Adresse partagée entre propriétaires
+    ⚠ [ELEVE] Règle B1 — Revente rapide : 2 mois (seuil=12)
+    ⚠ [ELEVE] Règle B2 — Plus-value anormale : 250% (seuil=50%)
+    ⚠ [ELEVE] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
+    ⚠ [ELEVE] Règle D2 — Adresse partagée entre propriétaires
     ⚠ [CRITIQUE] Règle D4 — IBAN partagé entre acteurs distincts
 
-  [D050] Fraude composite Yéro
+  [D050] Fraude composite Yero
     Label réel   : fraude
     Neural       : fraude (confiance=1.00)
     P(fraude)    : 0.96 | Score sym : 62pts
     Convergence  : ✓
     Explication  : Décision hybride : neural=fraude | symbolique=critique(62pts) | problog=P(fraude...
 
-    ⚠ [HAUT] Règle A1 — Accaparement urbain : 6 parcelles urbaines (seuil=3)
+    ⚠ [ELEVE] Règle A1 — Accaparement urbain : 6 parcelles urbaines (seuil=3)
     ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 8 parcelles au total
-    ⚠ [HAUT] Règle B1 — Revente rapide : 5 mois (seuil=12)
-    ⚠ [HAUT] Règle B2 — Plus-value anormale : 195% (seuil=50%)
+    ⚠ [ELEVE] Règle B1 — Revente rapide : 5 mois (seuil=12)
+    ⚠ [ELEVE] Règle B2 — Plus-value anormale : 195% (seuil=50%)
     ⚠ [CRITIQUE] Règle C1 — Conflit d'intérêt direct (CI-01 violée)
-    ⚠ [HAUT] Règle C3 — Favoritisme répétitif : 0 dossiers pour même acteur
-    ⚠ [HAUT] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
-    ⚠ [HAUT] Règle D2 — Adresse partagée entre propriétaires
+    ⚠ [ELEVE] Règle C3 — Favoritisme répétitif : 0 dossiers pour même acteur
+    ⚠ [ELEVE] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
+    ⚠ [ELEVE] Règle D2 — Adresse partagée entre propriétaires
     ⚠ [CRITIQUE] Règle D3 — Circuit de blanchiment détecté (2 boucle(s))
     ⚠ [CRITIQUE] Règle D4 — IBAN partagé entre acteurs distincts
 
@@ -139,110 +127,93 @@ SYNTHÈSE : 50 dossiers analysés
 
   [D031] Cheick Coulibaly
     Label réel   : speculation
-    Neural       : speculateur (confiance=1.00)
+    Neural       : speculation (confiance=1.00)
     P(fraude)    : 0.67 | Score sym : 15pts
-    Convergence  : ✓
-    Explication  : Décision hybride : neural=speculateur | symbolique=haut(15pts) | problog=P(fraud...
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=speculation | symbolique=eleve(15pts) | problog=P(frau...
 
-    ⚠ [HAUT] Règle A1 — Accaparement urbain : 4 parcelles urbaines (seuil=3)
-    ⚠ [HAUT] Règle B1 — Revente rapide : 5 mois (seuil=12)
-    ⚠ [HAUT] Règle B2 — Plus-value anormale : 120% (seuil=50%)
+    ⚠ [ELEVE] Règle A1 — Accaparement urbain : 4 parcelles urbaines (seuil=3)
+    ⚠ [ELEVE] Règle B1 — Revente rapide : 5 mois (seuil=12)
+    ⚠ [ELEVE] Règle B2 — Plus-value anormale : 120% (seuil=50%)
 
-  [D032] Bibata Ouédraogo
+  [D032] Bibata Ouedraogo
     Label réel   : speculation
-    Neural       : speculateur (confiance=1.00)
+    Neural       : speculation (confiance=1.00)
     P(fraude)    : 0.50 | Score sym : 10pts
-    Convergence  : ✓
-    Explication  : Décision hybride : neural=speculateur | symbolique=haut(10pts) | problog=P(fraud...
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=speculation | symbolique=eleve(10pts) | problog=P(frau...
 
-    ⚠ [HAUT] Règle B1 — Revente rapide : 8 mois (seuil=12)
-    ⚠ [HAUT] Règle B2 — Plus-value anormale : 85% (seuil=50%)
+    ⚠ [ELEVE] Règle B1 — Revente rapide : 8 mois (seuil=12)
+    ⚠ [ELEVE] Règle B2 — Plus-value anormale : 85% (seuil=50%)
 
   [D034] Mariam Zida
     Label réel   : speculation
-    Neural       : speculateur (confiance=1.00)
+    Neural       : speculation (confiance=1.00)
     P(fraude)    : 0.53 | Score sym : 10pts
-    Convergence  : ✓
-    Explication  : Décision hybride : neural=speculateur | symbolique=haut(10pts) | problog=P(fraud...
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=speculation | symbolique=eleve(10pts) | problog=P(frau...
 
-    ⚠ [HAUT] Règle B1 — Revente rapide : 3 mois (seuil=12)
-    ⚠ [HAUT] Règle B2 — Plus-value anormale : 150% (seuil=50%)
+    ⚠ [ELEVE] Règle B1 — Revente rapide : 3 mois (seuil=12)
+    ⚠ [ELEVE] Règle B2 — Plus-value anormale : 150% (seuil=50%)
 
   [D035] Adama Ouoba
     Label réel   : speculation
-    Neural       : speculateur (confiance=0.91)
+    Neural       : speculation (confiance=0.81)
     P(fraude)    : 0.51 | Score sym : 15pts
-    Convergence  : ✓
-    Explication  : Décision hybride : neural=speculateur | symbolique=haut(15pts) | problog=P(fraud...
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=speculation | symbolique=eleve(15pts) | problog=P(frau...
 
-    ⚠ [HAUT] Règle B1 — Revente rapide : 9 mois (seuil=12)
-    ⚠ [HAUT] Règle B2 — Plus-value anormale : 80% (seuil=50%)
-    ⚠ [HAUT] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
+    ⚠ [ELEVE] Règle B1 — Revente rapide : 9 mois (seuil=12)
+    ⚠ [ELEVE] Règle B2 — Plus-value anormale : 80% (seuil=50%)
+    ⚠ [ELEVE] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
 
-  [D036] Abdoulaye Nana
+  [D039] Jocelyne Kabre
     Label réel   : accaparement
-    Neural       : fraude (confiance=0.36)
-    P(fraude)    : 0.49 | Score sym : 7pts
-    Convergence  : ✓
-    Explication  : Décision hybride : neural=fraude | symbolique=moyen(7pts) | problog=P(fraude)=0....
+    Neural       : accaparement (confiance=0.99)
+    P(fraude)    : 0.65 | Score sym : 17pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=accaparement | symbolique=eleve(17pts) | problog=P(fra...
 
-    ⚠ [HAUT] Règle A1 — Accaparement urbain : 6 parcelles urbaines (seuil=3)
-    ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 7 parcelles au total
-
-  [D040] Karim Ouédraogo
-    Label réel   : accaparement
-    Neural       : speculateur (confiance=0.60)
-    P(fraude)    : 0.50 | Score sym : 7pts
-    Convergence  : ✓
-    Explication  : Décision hybride : neural=speculateur | symbolique=moyen(7pts) | problog=P(fraud...
-
-    ⚠ [HAUT] Règle A1 — Accaparement urbain : 4 parcelles urbaines (seuil=3)
-    ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 5 parcelles au total
+    ⚠ [ELEVE] Règle A1 — Accaparement urbain : 4 parcelles urbaines (seuil=3)
+    ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 6 parcelles au total
+    ⚠ [ELEVE] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
+    ⚠ [ELEVE] Règle D2 — Adresse partagée entre propriétaires
 
   [D041] Sylvestre Koala
-    Label réel   : limite
-    Neural       : speculateur (confiance=0.82)
+    Label réel   : reseau
+    Neural       : reseau (confiance=0.91)
     P(fraude)    : 0.51 | Score sym : 10pts
-    Convergence  : ✓
-    Explication  : Décision hybride : neural=speculateur | symbolique=haut(10pts) | problog=P(fraud...
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=reseau | symbolique=eleve(10pts) | problog=P(fraude)=0...
 
-    ⚠ [HAUT] Règle B1 — Revente rapide : 11 mois (seuil=12)
-    ⚠ [HAUT] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
+    ⚠ [ELEVE] Règle B1 — Revente rapide : 11 mois (seuil=12)
+    ⚠ [ELEVE] Règle D1 — Téléphone partagé (CI-05 → suspicion prête-nom)
 
-  [D042] Raïssa Nana
-    Label réel   : limite
-    Neural       : atypique (confiance=0.95)
+  [D042] Raissa Nana
+    Label réel   : reseau
+    Neural       : reseau (confiance=0.75)
     P(fraude)    : 0.38 | Score sym : 10pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=haut(10pts) | problog=P(fraude)=...
+    Explication  : Décision hybride : neural=reseau | symbolique=eleve(10pts) | problog=P(fraude)=0...
 
-    ⚠ [HAUT] Règle C3 — Favoritisme répétitif : 3 dossiers pour même acteur
-    ⚠ [HAUT] Règle D2 — Adresse partagée entre propriétaires
-
-  [D043] Olivier Sawadogo
-    Label réel   : limite
-    Neural       : speculateur (confiance=0.65)
-    P(fraude)    : 0.41 | Score sym : 5pts
-    Convergence  : ✗
-    Explication  : Décision hybride : neural=speculateur | symbolique=moyen(5pts) | problog=P(fraud...
-
-    ⚠ [HAUT] Règle B2 — Plus-value anormale : 51% (seuil=50%)
+    ⚠ [ELEVE] Règle C3 — Favoritisme répétitif : 3 dossiers pour même acteur
+    ⚠ [ELEVE] Règle D2 — Adresse partagée entre propriétaires
 
   [D044] Brigitte Zoungrana
-    Label réel   : limite
-    Neural       : standard (confiance=0.65)
+    Label réel   : reseau
+    Neural       : reseau (confiance=0.66)
     P(fraude)    : 0.71 | Score sym : 15pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=standard | symbolique=haut(15pts) | problog=P(fraude)=...
+    Explication  : Décision hybride : neural=reseau | symbolique=eleve(15pts) | problog=P(fraude)=0...
 
     ⚠ [CRITIQUE] Règle C2 — Conflit indirect : dossiers de proches familiaux
-    ⚠ [HAUT] Règle C3 — Favoritisme répétitif : 4 dossiers pour même acteur
+    ⚠ [ELEVE] Règle C3 — Favoritisme répétitif : 4 dossiers pour même acteur
 
 ── MOYEN 🟡 (───────────────────────────────────────────
 
-  [D001] Fatou Kaboré
+  [D001] Fatou Kabore
     Label réel   : standard
-    Neural       : standard (confiance=0.50)
+    Neural       : standard (confiance=0.98)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
     Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
@@ -250,47 +221,47 @@ SYNTHÈSE : 50 dossiers analysés
 
   [D002] Ibrahim Sawadogo
     Label réel   : standard
-    Neural       : standard (confiance=0.95)
+    Neural       : standard (confiance=1.00)
     P(fraude)    : 0.36 | Score sym : 0pts
     Convergence  : ✗
     Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
-  [D003] Youssouf Traoré
+  [D003] Youssouf Traore
     Label réel   : standard
-    Neural       : atypique (confiance=0.87)
-    P(fraude)    : 0.37 | Score sym : 0pts
-    Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
-
-
-  [D004] Kadiatou Diallo
-    Label réel   : standard
-    Neural       : standard (confiance=0.86)
+    Neural       : standard (confiance=0.97)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
     Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
-  [D005] Bintou Ouédraogo
+  [D004] Kadiatou Diallo
     Label réel   : standard
-    Neural       : atypique (confiance=0.94)
-    P(fraude)    : 0.38 | Score sym : 0pts
-    Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
-
-
-  [D006] Moussa Compaoré
-    Label réel   : standard
-    Neural       : atypique (confiance=0.96)
+    Neural       : standard (confiance=1.00)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
-  [D007] Aïcha Coulibaly
+  [D005] Bintou Ouedraogo
     Label réel   : standard
     Neural       : standard (confiance=0.92)
+    P(fraude)    : 0.38 | Score sym : 0pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
+
+
+  [D006] Moussa Compaore
+    Label réel   : standard
+    Neural       : standard (confiance=0.91)
+    P(fraude)    : 0.37 | Score sym : 0pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
+
+
+  [D007] Aicha Coulibaly
+    Label réel   : standard
+    Neural       : standard (confiance=1.00)
     P(fraude)    : 0.36 | Score sym : 0pts
     Convergence  : ✗
     Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
@@ -298,15 +269,15 @@ SYNTHÈSE : 50 dossiers analysés
 
   [D008] Seydou Zongo
     Label réel   : standard
-    Neural       : atypique (confiance=0.93)
+    Neural       : standard (confiance=0.88)
     P(fraude)    : 0.38 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
   [D009] Mariam Barry
     Label réel   : standard
-    Neural       : standard (confiance=0.55)
+    Neural       : standard (confiance=0.98)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
     Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
@@ -314,47 +285,47 @@ SYNTHÈSE : 50 dossiers analysés
 
   [D010] Ousmane Kiendrebeogo
     Label réel   : standard
-    Neural       : atypique (confiance=0.49)
+    Neural       : standard (confiance=1.00)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
   [D011] Rasmata Nikiema
     Label réel   : standard
-    Neural       : atypique (confiance=0.66)
+    Neural       : standard (confiance=0.87)
     P(fraude)    : 0.38 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
   [D012] Issouf Tapsoba
     Label réel   : standard
-    Neural       : atypique (confiance=0.57)
+    Neural       : standard (confiance=1.00)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
   [D013] Clarisse Ouoba
     Label réel   : standard
-    Neural       : atypique (confiance=0.91)
+    Neural       : standard (confiance=0.96)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
-  [D014] Valentin Kabré
+  [D014] Valentin Kabre
     Label réel   : standard
-    Neural       : atypique (confiance=0.94)
+    Neural       : standard (confiance=0.85)
     P(fraude)    : 0.38 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
   [D015] Aminata Sankara
     Label réel   : standard
-    Neural       : standard (confiance=0.66)
+    Neural       : standard (confiance=1.00)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
     Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
@@ -362,7 +333,7 @@ SYNTHÈSE : 50 dossiers analysés
 
   [D016] Dramane Ouattara
     Label réel   : standard
-    Neural       : standard (confiance=0.66)
+    Neural       : standard (confiance=0.97)
     P(fraude)    : 0.38 | Score sym : 0pts
     Convergence  : ✗
     Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
@@ -370,15 +341,15 @@ SYNTHÈSE : 50 dossiers analysés
 
   [D017] Salimata Sawadogo
     Label réel   : standard
-    Neural       : atypique (confiance=0.85)
+    Neural       : standard (confiance=0.98)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
   [D018] Hamidou Ilboudo
     Label réel   : standard
-    Neural       : standard (confiance=0.59)
+    Neural       : standard (confiance=0.98)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
     Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
@@ -386,31 +357,31 @@ SYNTHÈSE : 50 dossiers analysés
 
   [D019] Zenabou Kinda
     Label réel   : standard
-    Neural       : atypique (confiance=0.93)
+    Neural       : standard (confiance=0.93)
     P(fraude)    : 0.38 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
-  [D020] Pascal Lankoandé
+  [D020] Pascal Lankoande
     Label réel   : standard
-    Neural       : standard (confiance=0.57)
+    Neural       : standard (confiance=1.00)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
     Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
-  [D021] Djénéba Koné
+  [D021] Djeneba Kone
     Label réel   : standard
-    Neural       : atypique (confiance=0.53)
+    Neural       : standard (confiance=1.00)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
-  [D022] Lassané Ouédraogo
+  [D022] Lassane Ouedraogo
     Label réel   : standard
-    Neural       : standard (confiance=0.54)
+    Neural       : standard (confiance=0.91)
     P(fraude)    : 0.38 | Score sym : 0pts
     Convergence  : ✗
     Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
@@ -418,23 +389,23 @@ SYNTHÈSE : 50 dossiers analysés
 
   [D023] Marcelline Tougma
     Label réel   : standard
-    Neural       : atypique (confiance=0.71)
+    Neural       : standard (confiance=0.98)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
-  [D024] Boureima Diendéré
+  [D024] Boureima Diendere
     Label réel   : standard
-    Neural       : atypique (confiance=0.76)
+    Neural       : standard (confiance=0.98)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
-  [D025] Assétou Guiro
+  [D025] Assetou Guiro
     Label réel   : standard
-    Neural       : standard (confiance=0.52)
+    Neural       : standard (confiance=0.98)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
     Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
@@ -442,15 +413,15 @@ SYNTHÈSE : 50 dossiers analysés
 
   [D026] Rodrigue Belem
     Label réel   : standard
-    Neural       : atypique (confiance=0.97)
+    Neural       : standard (confiance=0.71)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
   [D027] Halimatou Sawadogo
     Label réel   : standard
-    Neural       : standard (confiance=0.88)
+    Neural       : standard (confiance=1.00)
     P(fraude)    : 0.36 | Score sym : 0pts
     Convergence  : ✗
     Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
@@ -458,34 +429,63 @@ SYNTHÈSE : 50 dossiers analysés
 
   [D028] Ernest Zoungrana
     Label réel   : standard
-    Neural       : atypique (confiance=0.94)
+    Neural       : standard (confiance=0.92)
     P(fraude)    : 0.38 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
-  [D029] Fatoumata Traoré
+  [D029] Fatoumata Traore
     Label réel   : standard
-    Neural       : atypique (confiance=0.89)
+    Neural       : standard (confiance=0.89)
     P(fraude)    : 0.38 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
 
   [D030] Souleymane Kouraogo
     Label réel   : standard
-    Neural       : atypique (confiance=0.62)
+    Neural       : standard (confiance=1.00)
     P(fraude)    : 0.37 | Score sym : 0pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=faible(0pts) | problog=P(fraude)...
+    Explication  : Décision hybride : neural=standard | symbolique=faible(0pts) | problog=P(fraude)...
 
+
+  [D036] Abdoulaye Nana
+    Label réel   : accaparement
+    Neural       : accaparement (confiance=1.00)
+    P(fraude)    : 0.49 | Score sym : 7pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=accaparement | symbolique=moyen(7pts) | problog=P(frau...
+
+    ⚠ [ELEVE] Règle A1 — Accaparement urbain : 6 parcelles urbaines (seuil=3)
+    ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 7 parcelles au total
 
   [D037] Fatoumata Barro
     Label réel   : accaparement
-    Neural       : atypique (confiance=0.43)
+    Neural       : accaparement (confiance=1.00)
     P(fraude)    : 0.48 | Score sym : 7pts
     Convergence  : ✗
-    Explication  : Décision hybride : neural=atypique | symbolique=moyen(7pts) | problog=P(fraude)=...
+    Explication  : Décision hybride : neural=accaparement | symbolique=moyen(7pts) | problog=P(frau...
 
-    ⚠ [HAUT] Règle A1 — Accaparement urbain : 5 parcelles urbaines (seuil=3)
+    ⚠ [ELEVE] Règle A1 — Accaparement urbain : 5 parcelles urbaines (seuil=3)
     ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 5 parcelles au total
+
+  [D040] Karim Ouedraogo
+    Label réel   : accaparement
+    Neural       : accaparement (confiance=0.98)
+    P(fraude)    : 0.50 | Score sym : 7pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=accaparement | symbolique=moyen(7pts) | problog=P(frau...
+
+    ⚠ [ELEVE] Règle A1 — Accaparement urbain : 4 parcelles urbaines (seuil=3)
+    ⚠ [MOYEN] Règle A4 — Multipropriété mixte : 5 parcelles au total
+
+  [D043] Olivier Sawadogo
+    Label réel   : reseau
+    Neural       : accaparement (confiance=0.36)
+    P(fraude)    : 0.41 | Score sym : 5pts
+    Convergence  : ✗
+    Explication  : Décision hybride : neural=accaparement | symbolique=moyen(5pts) | problog=P(frau...
+
+    ⚠ [ELEVE] Règle B2 — Plus-value anormale : 51% (seuil=50%)

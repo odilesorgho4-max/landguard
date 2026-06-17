@@ -1,51 +1,51 @@
 id,nom,type_acteur,nb_parcelles,nb_parcelles_urbaines,nb_parcelles_rurales,frequence_revente,ratio_plus_value,duree_detention_mois,nb_liens_reseau,partage_telephone,partage_adresse,partage_iban,age_premier_achat,nb_dossiers_traites,conflit_direct,lien_familial_agent,favoritisme,nb_ventes_circulaires,label,description
-D001,Fatou Kaboré,citoyen,1,1,0,0.0,0.1,48,1,0,0,0,5,0,0,0,0,0,standard,Dossier standard sans anomalie
+D001,Fatou Kabore,citoyen,1,1,0,0.0,0.1,48,1,0,0,0,5,0,0,0,0,0,standard,Dossier standard sans anomalie
 D002,Ibrahim Sawadogo,citoyen,1,0,1,0.0,0.05,60,0,0,0,0,8,0,0,0,0,0,standard,Dossier standard sans anomalie
-D003,Youssouf Traoré,citoyen,1,1,0,0.0,0.15,36,1,0,0,0,3,0,0,0,0,0,standard,Dossier standard sans anomalie
+D003,Youssouf Traore,citoyen,1,1,0,0.0,0.15,36,1,0,0,0,3,0,0,0,0,0,standard,Dossier standard sans anomalie
 D004,Kadiatou Diallo,citoyen,1,0,1,0.0,0.08,24,0,0,0,0,6,0,0,0,0,0,standard,Dossier standard sans anomalie
-D005,Bintou Ouédraogo,citoyen,1,1,0,0.0,0.2,18,1,0,0,0,2,0,0,0,0,0,standard,Dossier standard sans anomalie
-D006,Moussa Compaoré,citoyen,2,1,1,0.1,0.12,30,1,0,0,0,4,0,0,0,0,0,standard,Dossier standard sans anomalie
-D007,Aïcha Coulibaly,citoyen,1,1,0,0.0,0.05,42,0,0,0,0,7,0,0,0,0,0,standard,Dossier standard sans anomalie
+D005,Bintou Ouedraogo,citoyen,1,1,0,0.0,0.2,18,1,0,0,0,2,0,0,0,0,0,standard,Dossier standard sans anomalie
+D006,Moussa Compaore,citoyen,2,1,1,0.1,0.12,30,1,0,0,0,4,0,0,0,0,0,standard,Dossier standard sans anomalie
+D007,Aicha Coulibaly,citoyen,1,1,0,0.0,0.05,42,0,0,0,0,7,0,0,0,0,0,standard,Dossier standard sans anomalie
 D008,Seydou Zongo,citoyen,2,2,0,0.0,0.18,54,1,0,0,0,3,0,0,0,0,0,standard,Dossier standard sans anomalie
 D009,Mariam Barry,citoyen,1,0,1,0.0,0.07,48,1,0,0,0,5,0,0,0,0,0,standard,Dossier standard sans anomalie
 D010,Ousmane Kiendrebeogo,citoyen,1,1,0,0.0,0.14,36,0,0,0,0,4,0,0,0,0,0,standard,Dossier standard sans anomalie
 D011,Rasmata Nikiema,citoyen,2,1,1,0.0,0.22,60,1,0,0,0,6,0,0,0,0,0,standard,Dossier standard sans anomalie
 D012,Issouf Tapsoba,citoyen,1,1,0,0.0,0.09,24,0,0,0,0,3,0,0,0,0,0,standard,Dossier standard sans anomalie
 D013,Clarisse Ouoba,citoyen,1,0,1,0.0,0.11,30,1,0,0,0,2,0,0,0,0,0,standard,Dossier standard sans anomalie
-D014,Valentin Kabré,citoyen,2,2,0,0.1,0.25,48,1,0,0,0,5,0,0,0,0,0,standard,Dossier standard sans anomalie
+D014,Valentin Kabre,citoyen,2,2,0,0.1,0.25,48,1,0,0,0,5,0,0,0,0,0,standard,Dossier standard sans anomalie
 D015,Aminata Sankara,citoyen,1,1,0,0.0,0.06,36,0,0,0,0,4,0,0,0,0,0,standard,Dossier standard sans anomalie
 D016,Dramane Ouattara,citoyen,1,1,0,0.0,0.17,42,1,0,0,0,6,0,0,0,0,0,standard,Dossier standard sans anomalie
 D017,Salimata Sawadogo,citoyen,1,0,1,0.0,0.13,54,1,0,0,0,3,0,0,0,0,0,standard,Dossier standard sans anomalie
 D018,Hamidou Ilboudo,citoyen,2,1,1,0.0,0.08,48,0,0,0,0,5,0,0,0,0,0,standard,Dossier standard sans anomalie
 D019,Zenabou Kinda,citoyen,1,1,0,0.0,0.19,30,1,0,0,0,2,0,0,0,0,0,standard,Dossier standard sans anomalie
-D020,Pascal Lankoandé,citoyen,1,1,0,0.0,0.1,36,0,0,0,0,4,0,0,0,0,0,standard,Dossier standard sans anomalie
-D021,Djénéba Koné,citoyen,1,0,1,0.0,0.07,24,0,0,0,0,3,0,0,0,0,0,standard,Dossier standard sans anomalie
-D022,Lassané Ouédraogo,citoyen,2,2,0,0.0,0.23,60,1,0,0,0,7,0,0,0,0,0,standard,Dossier standard sans anomalie
+D020,Pascal Lankoande,citoyen,1,1,0,0.0,0.1,36,0,0,0,0,4,0,0,0,0,0,standard,Dossier standard sans anomalie
+D021,Djeneba Kone,citoyen,1,0,1,0.0,0.07,24,0,0,0,0,3,0,0,0,0,0,standard,Dossier standard sans anomalie
+D022,Lassane Ouedraogo,citoyen,2,2,0,0.0,0.23,60,1,0,0,0,7,0,0,0,0,0,standard,Dossier standard sans anomalie
 D023,Marcelline Tougma,citoyen,1,1,0,0.0,0.12,42,1,0,0,0,4,0,0,0,0,0,standard,Dossier standard sans anomalie
-D024,Boureima Diendéré,citoyen,1,1,0,0.0,0.16,36,0,0,0,0,2,0,0,0,0,0,standard,Dossier standard sans anomalie
-D025,Assétou Guiro,citoyen,1,0,1,0.0,0.09,48,1,0,0,0,5,0,0,0,0,0,standard,Dossier standard sans anomalie
+D024,Boureima Diendere,citoyen,1,1,0,0.0,0.16,36,0,0,0,0,2,0,0,0,0,0,standard,Dossier standard sans anomalie
+D025,Assetou Guiro,citoyen,1,0,1,0.0,0.09,48,1,0,0,0,5,0,0,0,0,0,standard,Dossier standard sans anomalie
 D026,Rodrigue Belem,citoyen,2,1,1,0.1,0.14,30,1,0,0,0,3,0,0,0,0,0,standard,Dossier standard sans anomalie
 D027,Halimatou Sawadogo,citoyen,1,1,0,0.0,0.05,54,0,0,0,0,6,0,0,0,0,0,standard,Dossier standard sans anomalie
 D028,Ernest Zoungrana,citoyen,1,1,0,0.0,0.2,24,1,0,0,0,2,0,0,0,0,0,standard,Dossier standard sans anomalie
-D029,Fatoumata Traoré,citoyen,2,2,0,0.0,0.17,48,1,0,0,0,4,0,0,0,0,0,standard,Dossier standard sans anomalie
+D029,Fatoumata Traore,citoyen,2,2,0,0.0,0.17,48,1,0,0,0,4,0,0,0,0,0,standard,Dossier standard sans anomalie
 D030,Souleymane Kouraogo,citoyen,1,0,1,0.0,0.11,36,0,0,0,0,3,0,0,0,0,0,standard,Dossier standard sans anomalie
-D031,Cheick Coulibaly,citoyen,4,4,0,0.75,1.2,5,2,0,0,0,3,0,0,0,0,0,speculation,"Revente 4 parcelles urbaines en 5 mois, +120%"
-D032,Bibata Ouédraogo,citoyen,3,3,0,0.67,0.85,8,1,0,0,0,2,0,0,0,0,0,speculation,"Revente rapide 3 parcelles, plus-value 85%"
-D033,Idrissa Zerbo,promoteur,5,4,1,0.6,0.95,6,3,0,1,0,4,0,0,0,0,0,speculation,"Promoteur : reventes < 6 mois, adresse partagée"
-D034,Mariam Zida,citoyen,3,3,0,1.0,1.5,3,1,0,0,0,2,0,0,0,0,0,speculation,"3 reventess en 3 mois chacune, +150%"
-D035,Adama Ouoba,citoyen,4,3,1,0.5,0.8,9,2,1,0,0,3,0,0,0,0,0,speculation,Téléphone partagé + reventes sous 9 mois
-D036,Abdoulaye Nana,citoyen,7,6,1,0.14,0.3,36,3,0,0,0,5,0,0,0,0,0,accaparement,"6 parcelles urbaines, dépassement massif CI-02"
+D031,Cheick Coulibaly,citoyen,4,4,0,0.75,1.2,5,2,0,0,0,3,0,0,0,0,0,speculation,Revente 4 parcelles en 5 mois +120%
+D032,Bibata Ouedraogo,citoyen,3,3,0,0.67,0.85,8,1,0,0,0,2,0,0,0,0,0,speculation,Revente rapide 3 parcelles +85%
+D033,Idrissa Zerbo,promoteur,5,4,1,0.6,0.95,6,3,0,1,0,4,0,0,0,0,0,speculation,Reventes < 6 mois adresse partagee
+D034,Mariam Zida,citoyen,3,3,0,1.0,1.5,3,1,0,0,0,2,0,0,0,0,0,speculation,3 reventes en 3 mois +150%
+D035,Adama Ouoba,citoyen,4,3,1,0.5,0.8,9,2,1,0,0,3,0,0,0,0,0,speculation,Tel partage + reventes sous 9 mois
+D036,Abdoulaye Nana,citoyen,7,6,1,0.14,0.3,36,3,0,0,0,5,0,0,0,0,0,accaparement,6 parcelles urbaines CI-02 violee
 D037,Fatoumata Barro,citoyen,5,5,0,0.0,0.2,48,2,0,0,0,6,0,0,0,0,0,accaparement,5 parcelles urbaines non mises en valeur
-D038,Souleymane Méda,promoteur,8,6,2,0.25,0.4,24,4,0,1,1,7,0,0,0,0,0,accaparement,Promoteur : 6 urbaines + IBAN + adresse partagée
-D039,Jocelyne Kabré,citoyen,6,4,2,0.0,0.15,60,3,1,1,0,4,0,0,0,0,0,accaparement,"4 urbaines + réseaux tél+adresse, 60 mois sans valeur"
-D040,Karim Ouédraogo,citoyen,5,4,1,0.2,0.35,30,2,0,0,0,5,0,0,0,0,0,accaparement,"4 parcelles urbaines + 1 rurale, CI-02 violée"
-D041,Sylvestre Koala,citoyen,3,3,0,0.33,0.48,11,2,1,0,0,3,0,0,0,0,0,limite,3 parcelles exactement + revente 11 mois (juste sous seuils)
-D042,Raïssa Nana,agent_public,2,2,0,0.0,0.2,24,2,0,1,0,4,3,0,0,1,0,limite,"Agent : dossiers proches + adresse partagée, favoritisme 3 dossiers"
-D043,Olivier Sawadogo,citoyen,4,3,1,0.25,0.51,13,3,0,0,0,4,0,0,0,0,0,limite,4 parcelles dont 3 urbaines + ratio PV 51% (seuil +1%)
-D044,Brigitte Zoungrana,notaire,2,2,0,0.0,0.1,36,3,0,0,0,8,4,0,1,0,0,limite,"Notaire lié professionnel à agent-vendeur, CI-07 limite"
-D045,Justin Compaoré,citoyen,3,2,1,0.33,0.6,10,4,1,1,0,3,0,0,0,0,0,limite,Cumul signaux : tél+adresse+pv 60%+revente 10 mois
-D046,Réseau Koné-Diallo,citoyen,6,5,1,0.83,2.1,4,5,1,1,1,2,0,0,1,0,0,fraude,"Réseau familial prête-noms : tél+adresse+IBAN partagés, reventes < 4 mois, +210%"
-D047,Agent Traoré indirect,agent_public,3,3,0,0.0,0.25,48,4,0,0,0,6,7,1,1,1,0,fraude,Conflit intérêt direct + indirect + favoritisme 7 dossiers famille
-D048,Réseau Oumar circulaire,citoyen,5,4,1,1.0,1.8,3,6,1,1,1,2,0,0,0,0,3,fraude,"Circuit X→Y→Z→X détecté, 3 boucles, tél+IBAN partagés, +180%"
-D049,Promoteur fantôme Kaboré,promoteur,9,7,2,0.78,2.5,2,7,1,1,1,1,0,0,0,0,0,fraude,"Promoteur sans identité stable, 7 parcelles urbaines, tous indicateurs positifs"
-D050,Fraude composite Yéro,citoyen,8,6,2,0.75,1.95,5,8,1,1,1,2,0,1,1,1,2,fraude,Fraude composite : accaparement+spéculation+réseau+conflit indirect+circuit partiel
+D038,Souleymane Meda,promoteur,8,6,2,0.25,0.4,24,4,0,1,1,7,0,0,0,0,0,accaparement,6 urbaines + IBAN + adresse partagee
+D039,Jocelyne Kabre,citoyen,6,4,2,0.0,0.15,60,3,1,1,0,4,0,0,0,0,0,accaparement,4 urbaines + reseaux tel+adresse
+D040,Karim Ouedraogo,citoyen,5,4,1,0.2,0.35,30,2,0,0,0,5,0,0,0,0,0,accaparement,4 parcelles urbaines CI-02 violee
+D041,Sylvestre Koala,citoyen,3,3,0,0.33,0.48,11,2,1,0,0,3,0,0,0,0,0,reseau,Tel partage + revente 11 mois
+D042,Raissa Nana,agent_public,2,2,0,0.0,0.2,24,2,0,1,0,4,3,0,0,1,0,reseau,Agent dossiers proches + adresse partagee
+D043,Olivier Sawadogo,citoyen,4,3,1,0.25,0.51,13,3,0,0,0,4,0,0,0,0,0,reseau,4 parcelles + PV 51% + liens reseau
+D044,Brigitte Zoungrana,notaire,2,2,0,0.0,0.1,36,3,0,0,0,8,4,0,1,0,0,reseau,Notaire lie professionnel agent-vendeur
+D045,Justin Compaore,citoyen,3,2,1,0.33,0.6,10,4,1,1,0,3,0,0,0,0,0,reseau,Cumul : tel+adresse+pv 60%+revente 10 mois
+D046,Reseau Kone-Diallo,citoyen,6,5,1,0.83,2.1,4,5,1,1,1,2,0,0,1,0,0,fraude,Reseau familial prete-noms complet
+D047,Agent Traore indirect,agent_public,3,3,0,0.0,0.25,48,4,0,0,0,6,7,1,1,1,0,fraude,Conflit direct+indirect+favoritisme
+D048,Reseau Oumar circulaire,citoyen,5,4,1,1.0,1.8,3,6,1,1,1,2,0,0,0,0,3,fraude,Circuit X->Y->Z->X 3 boucles
+D049,Promoteur fantome Kabore,promoteur,9,7,2,0.78,2.5,2,7,1,1,1,1,0,0,0,0,0,fraude,Promoteur sans identite stable
+D050,Fraude composite Yero,citoyen,8,6,2,0.75,1.95,5,8,1,1,1,2,0,1,1,1,2,fraude,Fraude composite tous indicateurs
